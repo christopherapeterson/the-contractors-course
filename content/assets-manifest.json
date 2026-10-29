@@ -1,0 +1,613 @@
+{
+  "assets": [
+    {
+      "sourceUrl": "https://contractorsischool.s3-us-west-1.amazonaws.com/ck_files/shares/reading/b/b-figure52.png",
+      "localPath": "content/assets/353457673ed37e77ed09.png",
+      "status": "downloaded",
+      "bytes": 36996,
+      "sha256": "156c682c6224653b37b59333c230964873b8c849de44da4eb4933dfcb10a8219"
+    },
+    {
+      "sourceUrl": "https://contractorsischool.s3-us-west-1.amazonaws.com/ck_files/shares/reading/b/b-table21.png",
+      "localPath": "content/assets/78917d3b3eb9cf12bf6e.png",
+      "status": "downloaded",
+      "bytes": 13426,
+      "sha256": "206c668fe5680e6208d8aad70103e7ebb7d1b2194f97001b3e1b16d3e752327d"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b91f9e1a6bd0e30c5e883c_66b91eb859ce979634784761_image_2024-08-11_102735222.png",
+      "localPath": "content/assets/74834b8442771695b7d2.png",
+      "status": "downloaded",
+      "bytes": 35281,
+      "sha256": "736e12c503fb79cce2e5306f36ec0d201d47d5d1cab17fa3d0bf05fdfd0c81e3"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b91fa01a6bd0e30c5e8850_66b91e9b6a9e61a39ed75c99_image_2024-08-11_102706705.png",
+      "localPath": "content/assets/306c540c7c2ff1b9d73f.png",
+      "status": "downloaded",
+      "bytes": 106456,
+      "sha256": "b8233250f525240fe2135b670aa2cf0b9ca4adce6a042ff5f79301bfe9b74558"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b91fa01a6bd0e30c5e8853_66b91ede539fa709d5cb14ed_image_2024-08-11_102814168.png",
+      "localPath": "content/assets/51cedbcb8556de8efec9.png",
+      "status": "downloaded",
+      "bytes": 84698,
+      "sha256": "80bd177306371a853ff75518fd9a90c1fcb97e5af931bd305e992fb12d1509e1"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b91fa01a6bd0e30c5e8857_66b91ecc9a45754d80ffc396_image_2024-08-11_102755783.png",
+      "localPath": "content/assets/ce0aeb0f6c539ed25a6d.png",
+      "status": "downloaded",
+      "bytes": 81245,
+      "sha256": "7ad6698b6a11257c4dd0daf1406f0d63cc210f4fd505d01301cb708c66fed9af"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b91fa01a6bd0e30c5e885d_66b91f22539fa709d5cb6e7f_image_2024-08-11_102922030.png",
+      "localPath": "content/assets/ceb692088a3d16490896.png",
+      "status": "downloaded",
+      "bytes": 553849,
+      "sha256": "0c7b9f3310eec01b63ea345dbbdf9ca9637f98bdb40f0142f13260535d2926b3"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b91fa01a6bd0e30c5e8865_66b91f016d79a7516cdf3c47_image_2024-08-11_102849097.png",
+      "localPath": "content/assets/ca3b7617461378219ab0.png",
+      "status": "downloaded",
+      "bytes": 416126,
+      "sha256": "39666a423a8d123d1818e1cff0a56d5e6ca00c6013e5d43525f757368d6d1546"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b91fa01a6bd0e30c5e8868_66b91f3f1a6bd0e30c5e21cf_image_2024-08-11_102951197.png",
+      "localPath": "content/assets/6f290981c735cbb14bb0.png",
+      "status": "downloaded",
+      "bytes": 396106,
+      "sha256": "7b7eaccc63878cc0c7d1b6e1e5ec48a6451f578d392f294d9f0cd13834bea101"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b91fa01a6bd0e30c5e886b_66b91f2fcdcfe64daea55a11_image_2024-08-11_102934850.png",
+      "localPath": "content/assets/873f3ae64cf8a4e57ba5.png",
+      "status": "downloaded",
+      "bytes": 416424,
+      "sha256": "791883dc7037a230d65201ff3d5fc7e3313552faa000786021f0a7e48cb1c10c"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b91fa01a6bd0e30c5e886e_66b91f60e5f5f920796406a9_image_2024-08-11_103023884.png",
+      "localPath": "content/assets/ca1e017d51fd525d16f6.png",
+      "status": "downloaded",
+      "bytes": 245479,
+      "sha256": "c65a2d2181dfb2a84a337030b30ab2f0152faa1f05ca64ef14a82da4b20b16d7"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b91fa01a6bd0e30c5e8871_66b91f7d1a6bd0e30c5e62e3_image_2024-08-11_103052991.png",
+      "localPath": "content/assets/50d333b8bc2e6b75d1af.png",
+      "status": "downloaded",
+      "bytes": 196668,
+      "sha256": "ad11f24a8b3673c86446e93df25a0d9481f44dcb5cd33a71f5a75c6dc2e96e30"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b91fa01a6bd0e30c5e8874_66b91f8de903be466813c066_image_2024-08-11_103109204.png",
+      "localPath": "content/assets/edf83b2429c866c7ed6a.png",
+      "status": "downloaded",
+      "bytes": 171739,
+      "sha256": "a3468ffa26ad4c0ee1242d4aa1ce4c3f7f463143c316811948c4853cd11bc7d8"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b91fa01a6bd0e30c5e893f_66b91f50539fa709d5cb9bca_image_2024-08-11_103007286.png",
+      "localPath": "content/assets/79d4046dad1822789a32.png",
+      "status": "downloaded",
+      "bytes": 155827,
+      "sha256": "3984859d9edc5f8ae0e94392a8c07bac2067f5f55adb9ff60c598b44e45f55ff"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b91fa01a6bd0e30c5e8942_66b91eeebd1fb049078cc53d_image_2024-08-11_102829656.png",
+      "localPath": "content/assets/ad41271dfa2986c8c78a.png",
+      "status": "downloaded",
+      "bytes": 233924,
+      "sha256": "2c2ccfae93df88bdc271aeb89d2dffc9aa903b676aa6f4dc9ceb82433ceb3c91"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b935379797766bdc54eb92_66b932b1e5f5f920797969e4_image_2024-08-11_115248683.png",
+      "localPath": "content/assets/419fdadbbae344b5f10a.png",
+      "status": "downloaded",
+      "bytes": 218611,
+      "sha256": "185abd2920c8e378a2875d1eeb69b662e08d772536278f97e3622aef801ac9f1"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b935379797766bdc54eb95_66b932473bcc3c82ded71bd6_image_2024-08-11_115103036.png",
+      "localPath": "content/assets/fe1dc35bacdfc84de97f.png",
+      "status": "downloaded",
+      "bytes": 200637,
+      "sha256": "fe6287cf4dbfb86fbaafec0e5580fffc0125eb0f23c2122b4b1ec756872c3015"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b935389797766bdc54eb9e_66b932766a9e61a39eecdc24_image_2024-08-11_115150370.png",
+      "localPath": "content/assets/fdd9c6b0ff680c6438aa.png",
+      "status": "downloaded",
+      "bytes": 293316,
+      "sha256": "43cf57a1920b5ec8b8c3fb9b142797199ac9dd3a5b44a0758df6c69ed069c870"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b935389797766bdc54eba1_66b931808d08b3a008130141_image_2024-08-11_114743583.png",
+      "localPath": "content/assets/fded730097f8dae4b265.png",
+      "status": "downloaded",
+      "bytes": 438061,
+      "sha256": "8dfaacc9327fbc28e00fcaa416ace03a6c21350bc5ac19dd4b2fcb99b8e6cfed"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b935389797766bdc54eba5_66b9314881ce1bdd255782df_image_2024-08-11_114647130.png",
+      "localPath": "content/assets/d1b52b306329b524177e.png",
+      "status": "downloaded",
+      "bytes": 559484,
+      "sha256": "149dd8297e227a896b282135064f37bc085ddae8fa2879fcabc373e20b328c7e"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b935389797766bdc54eba8_66b9328c9a45754d80136134_image_2024-08-11_115212279.png",
+      "localPath": "content/assets/f9bb60d0d3170554c09a.png",
+      "status": "downloaded",
+      "bytes": 199700,
+      "sha256": "243cbb32431700f97550b65d2c6f9b14e520a4e7538bb311056d7ca3a824eb0b"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b935389797766bdc54ebc0_66b931a6706977e8994c1c02_image_2024-08-11_114822203.png",
+      "localPath": "content/assets/85497930a0b2fcbca058.png",
+      "status": "downloaded",
+      "bytes": 375818,
+      "sha256": "2b2cf7eed9ed2ee8b915457cba5e1236efa44573636f816d8b1119f50ca87b6a"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b935389797766bdc54ebc3_66b932a259ce9796348d0e09_image_2024-08-11_115233696.png",
+      "localPath": "content/assets/01c0e8aebe6101cf6ee5.png",
+      "status": "downloaded",
+      "bytes": 716273,
+      "sha256": "2f2b72f382d2983e8bbccf1db134636ca2fff7e4a340c03be5a0262c295c6028"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b935389797766bdc54ebc6_66b931fd8e21190c26c6736d_image_2024-08-11_114948801.png",
+      "localPath": "content/assets/7c75a7ff21969f97ecaa.png",
+      "status": "downloaded",
+      "bytes": 529582,
+      "sha256": "6730c9712f82afd7cf29982a75f2d47c62e343d6e0ad34289dd44c69a17929a2"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b935389797766bdc54ebc9_66b931dbf9082a5fba38b26a_image_2024-08-11_114915133.png",
+      "localPath": "content/assets/00c84b3a4671f054a898.png",
+      "status": "downloaded",
+      "bytes": 526971,
+      "sha256": "d085cfb978ef2f2534073fb362e5004fea7b377e2551f654a7e6459d751f959d"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b987ea4126ee57e2816249_66b984be3bcc3c82de2d6ea6_image_2024-08-11_174254048.png",
+      "localPath": "content/assets/52ad87404b9aeadb5a97.png",
+      "status": "downloaded",
+      "bytes": 613383,
+      "sha256": "45efdf4f5f5cbba98b904a0a53f1d00e25ba1952264a3eb9ac7a8aa905b33f5c"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66b987ea4126ee57e2816262_66b984aeb48dad5fa0aefd00_image_2024-08-11_174238085.png",
+      "localPath": "content/assets/9a43648667fc6067160b.png",
+      "status": "downloaded",
+      "bytes": 849757,
+      "sha256": "0666a689a02040820fb675563706621d0d62b6ba1f9fda546a1d708ab023036b"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc23f7c271060d2873cf14_66bc239ed38fcb3b9599178b_image_2024-08-13_172517623.png",
+      "localPath": "content/assets/5ace0a2d3124be172628.png",
+      "status": "downloaded",
+      "bytes": 456210,
+      "sha256": "cbeb28cd365b28bedd81f5ae298d1da73115e91de1f10f1e8329b2a676e8bddb"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc23f7c271060d2873cf20_66bc23b48db44f5906d58c32_image_2024-08-13_172538800.png",
+      "localPath": "content/assets/bf8456e0b3a1341a65a6.png",
+      "status": "downloaded",
+      "bytes": 595305,
+      "sha256": "8cd6bd2f17bf830de4c2c1cf948363e78da7bb34ebf20e2fb9d31979665bfd17"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc2b6ebf62c2412cad07ed_66bc2b1bce05cd3f33af19b2_image_2024-08-13_175714455.png",
+      "localPath": "content/assets/0ecb1560217fe10fa501.png",
+      "status": "downloaded",
+      "bytes": 1088024,
+      "sha256": "48b2a619c24b4709e37d083543e24f31a6cb09d3df252c273d8d4b0875c0f8c3"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc2edac1bd7b2d42b6ec0b_66bc2da71c367f75b38b3006_image_2024-08-13_180806631.png",
+      "localPath": "content/assets/f4600745b3e885886718.png",
+      "status": "downloaded",
+      "bytes": 1540968,
+      "sha256": "58a3cb1ed10c6de9f96006381074fbedf0687f3bb58fbcc9d6ccd77d84bf267a"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45770f2962888d835c5e_66bc32a4949c024a2f7047f4_image_2024-08-13_182923622.png",
+      "localPath": "content/assets/82dfd34db36c8c55f262.png",
+      "status": "downloaded",
+      "bytes": 404408,
+      "sha256": "b80f0a8df69b8469125973a264a92d7cc9e27b293c32613b6970750bcabe4853"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45770f2962888d835c61_66bc361b0f2962888d738730_image_2024-08-13_184410766.png",
+      "localPath": "content/assets/673bea1c5fa501106b17.png",
+      "status": "downloaded",
+      "bytes": 465400,
+      "sha256": "de677e44a144c174c4cc98af913e489f9128ddb4ed5ede7c9fff7f4a339ba042"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45770f2962888d835c64_66bc387dae159fcc6356d8c7_image_2024-08-13_185420955.png",
+      "localPath": "content/assets/a24397cb2f44480b64da.png",
+      "status": "downloaded",
+      "bytes": 326876,
+      "sha256": "130c2a5427954c647018f97ef4d06465fc0c5237a5965853a425c72548b9a83c"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45770f2962888d835c67_66bc352fdda573298ca5c87c_image_2024-08-13_184014479.png",
+      "localPath": "content/assets/89dd5491de8bb041ca30.png",
+      "status": "downloaded",
+      "bytes": 138690,
+      "sha256": "a2e0961154bb6607e38bfaf8d7b7a0cab0a7352d6bf2df9035102674435d5a30"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45770f2962888d835c6a_66bc3faed90b9919cae57525_image_2024-08-13_192501590.png",
+      "localPath": "content/assets/717b97aa79488ddf8730.png",
+      "status": "downloaded",
+      "bytes": 145243,
+      "sha256": "e998a57f8e7e8ea71ecaea93fb43b2a1489f7393d6ba4a10585be0a22aa8a633"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835c80_66bc36ab7a43185dd0b15cac_image_2024-08-13_184635083.png",
+      "localPath": "content/assets/ea613fdd0b648827d936.png",
+      "status": "downloaded",
+      "bytes": 187240,
+      "sha256": "9b98ccf9fa8b41549ea15d247a446fff00f9daa6b7743d2104533ceb5ef69bb7"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835c83_66bc38cef8a907e1d261e218_image_2024-08-13_185541313.png",
+      "localPath": "content/assets/189136f342a0622b46ac.png",
+      "status": "downloaded",
+      "bytes": 566153,
+      "sha256": "d398cb998c9da133af2627505d2807e9cdc10eeba4ac35762cad772e483dc278"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835c87_66bc3ae7e405f751185ae0e4_image_2024-08-13_190438608.png",
+      "localPath": "content/assets/cf933bd7bef7795d35eb.png",
+      "status": "downloaded",
+      "bytes": 515137,
+      "sha256": "3cf8392a249d844aa7e7b11d7ea60f54248f7252c0ef39eb0ddc6ecccf178c0c"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835c8a_66bc43eec30603a61321f6dd_image_2024-08-13_194309216.png",
+      "localPath": "content/assets/9d3197573fcc8f999862.png",
+      "status": "downloaded",
+      "bytes": 255489,
+      "sha256": "2fcffa1c953cdc1d66c0732b33713f61ea9462a6379ff29ff81151f03e2752c0"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835c8d_66bc422bde0de4680ab98600_image_2024-08-13_193538754.png",
+      "localPath": "content/assets/d34a9fdb71a075073378.png",
+      "status": "downloaded",
+      "bytes": 242150,
+      "sha256": "8ea4a4b8af12cb9c38b5343a7736c31594e89b305b3beb6f434986678d8313f3"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835c9e_66bc3593ce05cd3f33b8b2ca_image_2024-08-13_184154654.png",
+      "localPath": "content/assets/b25d3a72841bfdae4eaf.png",
+      "status": "downloaded",
+      "bytes": 1248395,
+      "sha256": "ba527f5a5fa02f99a0ba428dba9f2a60add25beb5ea53d0af0ae25e1fe8915c9"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835ca1_66bc441ac08ca51ab9afa180_image_2024-08-13_194353464.png",
+      "localPath": "content/assets/09c6c16199af59a499d6.png",
+      "status": "downloaded",
+      "bytes": 337143,
+      "sha256": "5a3ba5ea2dd04b570ef3f6280ba0d7097a2ac7100788645b13133b65ca12041f"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835ca4_66bc44a8c08ca51ab9b03d8c_image_2024-08-13_194615757.png",
+      "localPath": "content/assets/ff1e25f5953e5d042b8e.png",
+      "status": "downloaded",
+      "bytes": 627383,
+      "sha256": "f4c22824dbe672dcfd69bc3b137bdd2b8241d18731b5e4fe40498ebf38710fae"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835ca7_66bc44fd0fc889827cf9b403_image_2024-08-13_194739916.png",
+      "localPath": "content/assets/be42c73d9c62f4c01abf.png",
+      "status": "downloaded",
+      "bytes": 445261,
+      "sha256": "b825c88ce01c33b4c6a2c20b594dc1d15715ebef635a690edb342d49c5005c24"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835caa_66bc44ef3819a048f2c749d1_image_2024-08-13_194725187.png",
+      "localPath": "content/assets/6b78234812f9cfbb7dd2.png",
+      "status": "downloaded",
+      "bytes": 568323,
+      "sha256": "a6080b7bdbad343f1ff15ed3eba55adc261e804c6ac75339ddf2efcb28878117"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835cad_66bc3ad45af0e83d1db77fd1_image_2024-08-13_190419129.png",
+      "localPath": "content/assets/039c8c5503f8111922a8.png",
+      "status": "downloaded",
+      "bytes": 608231,
+      "sha256": "f20baadb8d73fd5b8fb0e08ec56b377c5b27eb9b52e3208bfeacb6696f04710e"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835cb0_66bc42ecf7a722d2241c930b_image_2024-08-13_193851693.png",
+      "localPath": "content/assets/ac55c99d3a8386185ae6.png",
+      "status": "downloaded",
+      "bytes": 237904,
+      "sha256": "c50f0d0d89f182f3dce126251b8218ef07db98dd767e3a4ebbfad79179ed9995"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835cb3_66bc332aa18ff494d35f970d_image_2024-08-13_183137153.png",
+      "localPath": "content/assets/5b9db7b6e216bfd90f1d.png",
+      "status": "downloaded",
+      "bytes": 254295,
+      "sha256": "917c0468b71aa4503b84b674df2946fdedee9f4f78b58a7f83e66404e54536de"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835cb6_66bc3560faf12d39517d82f7_image_2024-08-13_184103987.png",
+      "localPath": "content/assets/5e8e68e839b01be87150.png",
+      "status": "downloaded",
+      "bytes": 332439,
+      "sha256": "e1ef8d06ae5d5dfe665c4fe39297d340f1c6b0113d96afcb9e36317fc421be4c"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835cb9_66bc32b60fc889827ce723ae_image_2024-08-13_182941300.png",
+      "localPath": "content/assets/bf381a10f720aa03f27b.png",
+      "status": "downloaded",
+      "bytes": 393074,
+      "sha256": "ea29b5c86d62483133f342d5bfc9adabfed15ef49e52020306d41c04e492e847"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835cbc_66bc351a373475f8a2e23b89_image_2024-08-13_183953780.png",
+      "localPath": "content/assets/35e59f3dc92c78321444.png",
+      "status": "downloaded",
+      "bytes": 416105,
+      "sha256": "ce14ae3b6aee887dbb451705eb918bb4624b4459287525bd93c7463b452d875e"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835cbf_66bc4343dae1587a108cf6bf_image_2024-08-13_194018932.png",
+      "localPath": "content/assets/3f83e6898620e87d3809.png",
+      "status": "downloaded",
+      "bytes": 162357,
+      "sha256": "99495ee2c814463586d9f7999a2bdfbcfd1b9a9269f61248c6d620bfc63ced3a"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835cc2_66bc3a630e92bab7313ea96b_image_2024-08-13_190226396.png",
+      "localPath": "content/assets/edccab9d8b85675da130.png",
+      "status": "downloaded",
+      "bytes": 738779,
+      "sha256": "30c3bf61ae0b8b54387601cd4d813c9de89d5b0de12f44746adddb4ee7f62ce8"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835cc5_66bc4405c30603a613221794_image_2024-08-13_194332273.png",
+      "localPath": "content/assets/59b7c34f704603156982.png",
+      "status": "downloaded",
+      "bytes": 290523,
+      "sha256": "b5b2f45336dc520c4cc438b988eb3af5e72479046e86590276a023f4af0746ff"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835cc8_66bc377ace05cd3f33ba7b6b_image_2024-08-13_185001208.png",
+      "localPath": "content/assets/73d165be6b6aeb1f7ff3.png",
+      "status": "downloaded",
+      "bytes": 172047,
+      "sha256": "8e7e6ac85c64430039ebcd024007b97767385f86c9b1d3181652deeacae75074"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835d0c_66bc421159ef6ebc423bab52_image_2024-08-13_193512135.png",
+      "localPath": "content/assets/fefede6fe62b62813094.png",
+      "status": "downloaded",
+      "bytes": 220388,
+      "sha256": "56fe2fcecfdf263e5d2ebcf4bf29157390bf16a204a1b842f1a49c2f9e979d54"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835d0f_66bc326fd38fcb3b95a7288c_image_2024-08-13_182831327.png",
+      "localPath": "content/assets/eaf15f95d83f4875693d.png",
+      "status": "downloaded",
+      "bytes": 291655,
+      "sha256": "a0ef23a1180b3bf3d662c2df67c90fa76de27a20959b62583127ea8e5f442d27"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc45790f2962888d835d12_66bc431c7aaa3991419bb63f_image_2024-08-13_193939801.png",
+      "localPath": "content/assets/c86a5843547f3e240542.png",
+      "status": "downloaded",
+      "bytes": 453189,
+      "sha256": "930dac94dba668c2e4d09ad97809717689cd146d3a93e7e6e3898e619689f88c"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d15_66bc3767dae1587a108174d0_image_2024-08-13_184942617.png",
+      "localPath": "content/assets/e01ca2312ff6b8a31f94.png",
+      "status": "downloaded",
+      "bytes": 495089,
+      "sha256": "cf1d7cc7b3023f842534d3d4271796094a63efaacc1bec16b8f138184ca6f653"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d18_66bc371b1d4cb0789bc67459_image_2024-08-13_184826263.png",
+      "localPath": "content/assets/bca5bc1b2f4b0f3d2748.png",
+      "status": "downloaded",
+      "bytes": 326803,
+      "sha256": "262a5fb1db4f45f8be12dee1ce93ef916e1eea867a2283cee0937e67aff3affc"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d1b_66bc430a716ef3650c72070f_image_2024-08-13_193921364.png",
+      "localPath": "content/assets/90190770024dd0153765.png",
+      "status": "downloaded",
+      "bytes": 622178,
+      "sha256": "cd7e7c6cbd18349bdd7eca901beaa0c4122488171753d1a86f656b8dbb12c66d"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d1e_66bc44e0d38fcb3b95b9a8f5_image_2024-08-13_194710875.png",
+      "localPath": "content/assets/50b2eb5ec282ed57ef79.png",
+      "status": "downloaded",
+      "bytes": 713542,
+      "sha256": "975450876a8f939598bebcc62eb631640774a675dd012ccf0f74e0796c10bafd"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d21_66bc33db57ee244e1f2a6818_image_2024-08-13_183434873.png",
+      "localPath": "content/assets/902ee84fef12f94985c5.png",
+      "status": "downloaded",
+      "bytes": 281222,
+      "sha256": "9876a732ca3945d23928290bfd1f9cc2ef27edd6d3024a507c81a62dd98dfa17"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d24_66bc357857ee244e1f2bd2c4_image_2024-08-13_184127765.png",
+      "localPath": "content/assets/f58b9762e8b488b2d2ec.png",
+      "status": "downloaded",
+      "bytes": 514756,
+      "sha256": "0fc4c753f4e6f1ad64d23fe594d7d9a4ed492f5b5694b3ace58a30f6cfacf08d"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d27_66bc3ccfd38fcb3b95b18b31_image_2024-08-13_191246317.png",
+      "localPath": "content/assets/ace7a2a50747b9986498.png",
+      "status": "downloaded",
+      "bytes": 841041,
+      "sha256": "af5ab8456b8a9e937c7dbeecab6a6c512c3184e882e0bb277315cd24a10c54b0"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d32_66bc3fe8ff4e9b5f45521a23_image_2024-08-13_192559053.png",
+      "localPath": "content/assets/76fe32291dac71bb6d9b.png",
+      "status": "downloaded",
+      "bytes": 963383,
+      "sha256": "dabfffb6e1fd21eaf78d760994b2b28ece5f05b0e497fcb3248c4e0a95151698"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d35_66bc383ac30603a613176959_image_2024-08-13_185313611.png",
+      "localPath": "content/assets/f9fd6a2dae23c5275858.png",
+      "status": "downloaded",
+      "bytes": 1295937,
+      "sha256": "4259b611d3cbd0e585071b116a95dfededeea4c4eb5eabc9012934a179fa3cd5"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d38_66bc4378f7a722d2241d0918_image_2024-08-13_194111458.png",
+      "localPath": "content/assets/c43262915453dfe67ff1.png",
+      "status": "downloaded",
+      "bytes": 836316,
+      "sha256": "302af7f38c71b6807b1bb889137b653a5c4904192f55844e335e83e1c6f64904"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d3b_66bc43516f3ec98f3c84b8b0_image_2024-08-13_194031691.png",
+      "localPath": "content/assets/8bbfd02885534d6045ab.png",
+      "status": "downloaded",
+      "bytes": 611209,
+      "sha256": "99c6ae79a7ea80d31dcf9fa8e339f463c43d128f5e1deb113c9f97633d0b2111"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d76_66bc44973819a048f2c700fb_image_2024-08-13_194558171.png",
+      "localPath": "content/assets/1ff33ed0cbf96999ac6a.png",
+      "status": "downloaded",
+      "bytes": 359926,
+      "sha256": "d2acc32b502b0a8dffd6d508267449e9c86919da7a6bf5253bc01e13c0c81f70"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d79_66bc438be405f7511863034c_image_2024-08-13_194130797.png",
+      "localPath": "content/assets/28cd9196c5a4d1e1c107.png",
+      "status": "downloaded",
+      "bytes": 209622,
+      "sha256": "002d317cea3f4d4413a2390eb848eda2485e4e9df247e05180079be0a2a90c35"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d7c_66bc3608c271060d288581c3_image_2024-08-13_184352267.png",
+      "localPath": "content/assets/076a730fa32fa10091c8.png",
+      "status": "downloaded",
+      "bytes": 243961,
+      "sha256": "dc80a3bba3099ff72faef2e7d049e66ee3a706e3c4590c317c3599ca6a55e4a3"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d7f_66bc4334d90b9919cae8d311_image_2024-08-13_194003696.png",
+      "localPath": "content/assets/fd4a8223c4d07e3fced5.png",
+      "status": "downloaded",
+      "bytes": 620737,
+      "sha256": "f0c80b702df8d8d5d40fb4d06a4046289803baaec99e5492c4671b3eed9849a7"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bc457a0f2962888d835d82_66bc45100e92bab731486f5b_image_2024-08-13_194759358.png",
+      "localPath": "content/assets/195ebda3fe42344495e1.png",
+      "status": "downloaded",
+      "bytes": 287155,
+      "sha256": "5076f4757c684868bd3ca6fa96ada1ddc82d270dc5d7fcf9ed31969b6f10e56d"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bd6d4aedeb9d6ee2c834d6_image-placeholder.svg",
+      "localPath": "content/assets/e63a5f7828e00780168f.svg",
+      "status": "downloaded",
+      "bytes": 801,
+      "sha256": "32099b201e4d474839074efeff27c07799d68431c3ab1a86eea6c7cd10f886c5"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bd6d4aedeb9d6ee2c834f2_66bd6d0768915070095a9ac9_image_2024-08-14_165046684.png",
+      "localPath": "content/assets/54c362cf9d0ce8db952d.png",
+      "status": "downloaded",
+      "bytes": 1478627,
+      "sha256": "fec871955c9e63c0e48f3cb575f5f106fa1dcf693d6f22641ce37b53bfd25bc2"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bd6d4aedeb9d6ee2c834f5_66bd6c8f8d35064f7f49278f_image_2024-08-14_164846198.png",
+      "localPath": "content/assets/dd5f4e75cc7909e1dc64.png",
+      "status": "downloaded",
+      "bytes": 587414,
+      "sha256": "3ce3860bcc9d7c1b9ad9c35d7dba09fa2b22648ead673d5f444d1b1e17d55e19"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bd78868568f206772582cb_66bd77885df9af36a8b46ee9_image_2024-08-14_173535658.png",
+      "localPath": "content/assets/0334b4fdc0f32dec4238.png",
+      "status": "downloaded",
+      "bytes": 820797,
+      "sha256": "c4ada9e313946ec0db6124f34ee14a80ef23cbf3a35f4f825d7641b7f08f85ff"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bd78868568f206772582ce_66bd7827abbca97993730980_image_2024-08-14_173815139.png",
+      "localPath": "content/assets/f11189a276aa778a6f42.png",
+      "status": "downloaded",
+      "bytes": 356214,
+      "sha256": "db52638c82a42e9b07c315730d38c416f7e5609306b88d161a2e7aa4a5167e16"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bd78868568f206772582d3_66bd781cbd90036f497efc27_image_2024-08-14_173803669.png",
+      "localPath": "content/assets/d881d989670f74022510.png",
+      "status": "downloaded",
+      "bytes": 1785434,
+      "sha256": "9eed3611a060a057de7e6758745bc45e2471545a4d758d6bdfb67a46ee19f066"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bd78868568f206772582d6_66bd74602c14b74cf7dcbf0e_image_2024-08-14_172208137.png",
+      "localPath": "content/assets/e0afad8f546ea3187770.png",
+      "status": "downloaded",
+      "bytes": 386124,
+      "sha256": "53ab8a692339a0f1c7dc856eb4259e42b800da39cf7ee9468db105c81efc5e34"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bd78878568f206772582f0_66bd76ba2fe678ed4fe8bee4_image_2024-08-14_173209974.png",
+      "localPath": "content/assets/65e390e56d5c70e8a851.png",
+      "status": "downloaded",
+      "bytes": 375177,
+      "sha256": "33b64660f3c591210d632534dd87a1cd52a2247a66651206b3a983ccb6aa2962"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bd78878568f20677258302_66bd76d90858557e5c6d6c1c_image_2024-08-14_173240779.png",
+      "localPath": "content/assets/3d4e76829dff4f55efe8.png",
+      "status": "downloaded",
+      "bytes": 1415164,
+      "sha256": "a016df7b7b9b5aa667f0f53e1c4e25d6bf1ea716fbff845ef6e19b3350aae4a8"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bd78878568f20677258305_66bd76740858557e5c6d2287_image_2024-08-14_173059874.png",
+      "localPath": "content/assets/622b8a3b6c29c41b2d40.png",
+      "status": "downloaded",
+      "bytes": 274166,
+      "sha256": "cae71e391be7a3165a3de4e5d2bf312215f9a56603afa9da7863cd372e54a5fd"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bd78878568f20677258309_66bd76fc71cdbd2f2c03f7b1_image_2024-08-14_173316032.png",
+      "localPath": "content/assets/fa4f9f4cda9c9a558c2d.png",
+      "status": "downloaded",
+      "bytes": 517682,
+      "sha256": "96befc428e37388059c59753cd39b9902d1de688dcca502091b194b13e4e9b41"
+    },
+    {
+      "sourceUrl": "https://uploads-ssl.webflow.com/6528916f8c8705e974ae8f7d/66bd78878568f2067725830c_66bd769ef60f112db01451e4_image_2024-08-14_173141336.png",
+      "localPath": "content/assets/41b0999f6a0d496eef25.png",
+      "status": "downloaded",
+      "bytes": 357777,
+      "sha256": "d8a611fbaaf0a1e1ecd5751d738acf54a1a4158d5e34812476cbda84ec689c50"
+    }
+  ]
+}

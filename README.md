@@ -1,6 +1,23 @@
 # The Contractor's Course
 
-I'm moving my California contractor exam course from Webflow to GitHub and Vercel. This repository currently preserves my course content. The website migration is waiting for my Webflow code export.
+I'm hosting my California contractor exam course on Vercel, with the source and course material in this public repository.
+
+Production address: <https://thecontractorscourse.vercel.app>
+
+The site includes a responsive homepage, a searchable chapter library, 12 reading pages with local illustrations, an 81-card review deck, and the original FlexiQuiz practice test links. Chapter completion and learned flashcards persist in the visitor's browser. No sign-in or payment is required for this public version.
+
+## Run the website
+
+Node.js 22 or later is required.
+
+~~~sh
+npm ci
+npm run build
+npm run check
+npm start
+~~~
+
+The site builds to dist/. Vercel serves the generated HTML with clean URLs. The local preview uses Python 3 and serves the same routes at <http://127.0.0.1:4173>. The build sanitizes imported HTML and rewrites course images to locally hosted assets.
 
 ## Recovered content
 
@@ -27,22 +44,17 @@ python3 scripts/download_assets.py
 
 `--check` validates collection sizes, required fields, unique slugs and IDs, and generated JSON against the source exports. Downloads use only media URLs found in the exported course content.
 
-## Website migration status
+## Design and content migration
 
-The Webflow Designer is at <https://the-contractors-course.design.webflow.com/>. Its publishing panel showed the staging domain as **Not published** when inspected. Code export is unavailable on the current Workspace plan. I am unlocking that export to preserve the original design more closely.
+The source Webflow Designer is at <https://the-contractors-course.design.webflow.com/>. Its publishing panel showed the staging domain as **Not published** when inspected. Official code export requires a paid Workspace plan.
 
-Next steps:
+I chose to launch from my recovered repository content with a new responsive study interface. This version does not require a Webflow plan. An official design export can still be incorporated later if I want a closer match to the original Webflow layout.
 
-1. Download the official HTML, CSS, JavaScript, and asset ZIP after export is unlocked.
-2. Preserve the exported design and rebuild CMS-bound pages using these JSON files.
-3. Replace Webflow login and checkout, and connect this repository to Vercel.
-4. Verify desktop and mobile layouts, every course page, flashcards, quiz links, contact forms, sign-in, and test checkout before launch.
-
-The public [GitHub repository](https://github.com/christopherapeterson/the-contractors-course) is connected to my [Vercel project](https://vercel.com/chris-projects-f7cef533/the-contractors-course). The application, authentication, and payment flows are not deployed yet. No customer records or payment credentials are included. FlexiQuiz tests are preserved as external links; their underlying question banks have not been exported.
+The [GitHub repository](https://github.com/christopherapeterson/the-contractors-course) is connected to my [Vercel project](https://vercel.com/chris-projects-f7cef533/thecontractorscourse). No customer records or payment credentials are included. FlexiQuiz tests are preserved as external links; their underlying question banks have not been exported. The source study material is preserved as supplied and has not received a factual or legal review.
 
 ## Auth and payments
 
-My proposed stack is Next.js on Vercel, Clerk for authentication, Stripe Checkout for payments, and Postgres for enrollment and learning progress. This is a proposal, not an active integration.
+The current site is public and static. If I add accounts or paid services later, my proposed stack is Next.js on Vercel, Clerk for authentication, Stripe Checkout for payments, and Postgres for enrollment and learning progress. These services are not active integrations.
 
 Clerk manages sign-in and sessions. Each protected server page, API route, and mutation must check identity and enrollment directly. Sign-in and payment status are separate checks.
 

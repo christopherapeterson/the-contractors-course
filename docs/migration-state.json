@@ -9,9 +9,10 @@
     "teamId": "team_xCuRD8kE0WgzrkJg4M2OmMFf",
     "teamSlug": "chris-projects-f7cef533",
     "projectId": "prj_M7daKHHcCagAXT8gv9GlxpVECM11",
-    "projectName": "the-contractors-course",
+    "projectName": "thecontractorscourse",
     "gitConnectionVerified": true,
-    "deployed": false
+    "deployed": false,
+    "productionUrl": "https://thecontractorscourse.vercel.app"
   },
   "recovered": {
     "lawAndBusinessItems": 8,
@@ -21,8 +22,8 @@
     "courseLinkedMediaFiles": 87
   },
   "designExport": {
-    "status": "waiting-for-workspace-code-export",
-    "selectedApproach": "official-webflow-code-export",
+    "status": "not-required-for-current-launch",
+    "selectedApproach": "public-static-study-site-from-recovered-content",
     "sourceStagingDomain": "the-contractors-course.webflow.io",
     "sourcePublishStatusObserved": "Not published",
     "workspacePlanUrl": "https://webflow.com/dashboard/workspace/christophers-workspace-6560b9/plans?ref=exportmodal"
@@ -59,19 +60,15 @@
     "User Account"
   ],
   "remainingWork": [
-    "Download the official design ZIP after Workspace code export is unlocked",
-    "Inventory and preserve marketing assets, custom code, interactions, forms, and draft pages from the design export",
-    "Rebuild CMS collection pages using the recovered JSON and local media manifest",
-    "Decide the new product offer, including the source design's conflicting yearly price text",
-    "Configure Clerk, Stripe Checkout, and durable enrollment/progress storage if the proposed stack is accepted",
-    "Verify sign-in, payment, enrollment, desktop/mobile layout, flashcards, and external quiz links",
-    "Deploy a Vercel preview and configure the production domain when ready"
+    "Deploy and verify the public static course site",
+    "Optional: configure account-based progress and paid enrollment if requested",
+    "Optional: incorporate the original Webflow design export"
   ],
   "limitations": [
-    "No complete design export has been downloaded yet",
-    "The 87 recovered files are media linked from course HTML, not a full export of the Webflow Assets panel",
+    "The site uses a new responsive interface; it is not an exact Webflow design export",
     "External FlexiQuiz question banks are not included",
-    "Historical order/customer records have not been exported",
-    "Auth/payment recommendations are not implemented or provisioned"
+    "Progress is saved in the visitor browser and does not sync across devices",
+    "Auth and payment integrations are not enabled",
+    "Original study material has not received a factual or legal review"
   ]
 }

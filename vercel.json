@@ -14,8 +14,11 @@
     }
   ],
   "redirects": [
-    {"source": "/log-in", "destination": "/dashboard", "permanent": false},
-    {"source": "/sign-up", "destination": "/dashboard", "permanent": false},
-    {"source": "/signup", "destination": "/dashboard", "permanent": false}
+    {"source": "/application-guidance", "destination": "/access-denied?usredir=%2Fapplication-guidance", "permanent": false},
+    {"source": "/practice-tests", "destination": "/access-denied?usredir=%2Fpractice-tests", "permanent": false},
+    {"source": "/flash-cards", "destination": "/access-denied?usredir=%2Fflash-cards", "permanent": false},
+    {"source": "/user-account", "destination": "/log-in?usredir=%2Fuser-account", "permanent": false},
+    {"source": "/law-business/business-organization-and-licensing", "destination": "/access-denied?usredir=%2Flaw-business%2Fbusiness-organization-and-licensing", "permanent": false},
+    {"source": "/general-b/planning-estimating", "destination": "/access-denied?usredir=%2Fgeneral-b%2Fplanning-estimating", "permanent": false}
   ]
 }

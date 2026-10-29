@@ -1,0 +1,402 @@
+<!DOCTYPE html><!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Thu Oct 29 2026 19:10:49 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="the-contractors-course.webflow.io" data-wf-page="66c01f3829fc359a03faf5b9" data-wf-site="6527313b854f07008c2d65a2" data-wf-status="1"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>Dashboard</title><meta content="Dashboard" property="og:title"/><meta content="Dashboard" name="twitter:title"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Webflow" name="generator"/><link href="/assets/webflow/7bf2e8ec966bf31542f210f0.css" rel="stylesheet" type="text/css" integrity="sha384-8tLOjKV0eUa3QBmSE4GtI9HH9u6DmbbHLg69VBEpggTimvuVC+/pdJpQx/rsHpub" crossorigin="anonymous"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="/assets/webflow/12e10ff0e0e8b43b51d2d201.png" rel="shortcut icon" type="image/x-icon"/><link href="/assets/webflow/afec06a4c9bb4ee97fe96326.png" rel="apple-touch-icon"/><link href="/dashboard" rel="canonical"/><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push.apply(w[g],Array.isArray(i)?i:[i]);})(window,['G-9XJWRQ59Y2'],'google_tags_first_party');</script><script async="" src="https://the-contractors-course.webflow.io/wvxwa3jtwetcNjUyNzMxM2I4NTRmMDcwMDhjMmQ2NWEy/hAW1eiyPzkGRP8dVA2l57jpI-OY"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('set', 'developer_id.dZGVlNj', true);gtag('set', 'developer_id.dYWYxNW', true);gtag('js', new Date());gtag('config', 'G-9XJWRQ59Y2');</script><style>
+
+/* Improve the font quality */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Allows Zooming for Accessibility */
+.user-font-size {font-size: 1em;}
+.block{display: block;}
+</style>
+
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "nqx9i1hd85");
+</script>
+
+<!-- Sygnal Attributes 5 | Memberships BETA -->
+<link rel="stylesheet" href="/assets/webflow/96d74339e1b6d46f24d340f5.css"> 
+<script defer src="https://cdn.jsdelivr.net/gh/sygnaltech/webflow-util@5.3.4/dist/nocode/webflow-membership.js"></script>
+
+
+<!-- Sygnal Attributes 5 | User Accounts  -->
+<script>
+window.sa5 = window.sa5 || [];
+window.sa5.push(['getMembershipConfig', 
+  (config) => {
+    // Apply any configuration settings here
+    // such as access groups 
+    config.accessGroupsFolder = '/sa5-ag';
+    config.accessGroups = ['generalb'];
+    return config;
+  }]);
+</script>
+
+<!-- Sygnal Attributes 5 | Memberships | Config -->
+<script>
+window.sa5 = window.sa5 || [];
+window.sa5.push(['getMembershipRoutingConfig', 
+  (config) => {
+    config.routeAfterFirstLogin = '/dashboard';
+    config.routeAfterLogin = '/dashboard';
+    return config;
+  }]); 
+</script>
+
+<!-- Memberstack webflow package -->
+<script data-memberstack-app="app_cm04fa8te003j0sw3afnng8hh" src="https://static.memberstack.com/scripts/v1/memberstack.js" type="text/javascript"></script>
+<script> 
+window.sa5.push(['userInfoChanged', 
+  (user) => {
+    
+    // Check to see if access_groups info is loaded
+    if(user.user_data_loaded.access_groups) {
+      console.log("Access groups loaded");
+      console.log("User data loaded access groups:", user.user_data_loaded.access_groups);
+      console.log("User is in 'generalb' group:", user.access_groups.includes('generalb'));
+    
+      const accessRequiredElement = document.getElementById('accessrequired');
+      
+      if (accessRequiredElement) {
+        // Make changes to the page when the current user
+        // is in the 'generalb' access group.
+        if(user.access_groups.includes('generalb')) {
+          accessRequiredElement.classList.remove('block');
+          accessRequiredElement.classList.add('hide');
+          console.log("User is in 'generalb' group. Element hidden.");
+        }
+        // Make changes to the page when the current user
+        // is NOT in the 'generalb' access group.
+        else {
+          accessRequiredElement.classList.remove('hide');
+          accessRequiredElement.classList.add('block');
+          console.log("User is not in 'generalb' group. Element shown.");
+        }
+      } else {
+        console.error("Element with ID 'accessrequired' not found");
+      }
+      
+      console.log("User access groups:", user.access_groups);
+    } else {
+      console.log("Access groups not loaded yet");
+    }
+    
+  }]); 
+</script><script type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = {"currencyCode":"USD","symbol":"$","decimal":".","fractionDigits":2,"group":",","template":"{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}","hideDecimalForWholeNumbers":false};</script></head><body><div class="page-wrapper"><div class="global-styles w-embed"><style>
+
+/* Snippet gets rid of top margin on first element in any rich text*/
+.w-richtext>:first-child {
+	margin-top: 0;
+}
+
+/* Snippet gets rid of bottom margin on last element in any rich text*/
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0;
+}
+
+/* Snippet prevents all click and hover interaction with an element */
+.clickable-off {
+	pointer-events: none;
+}
+
+/* Snippet enables all click and hover interaction with an element */
+.clickable-on{
+  pointer-events: auto;
+}
+
+/* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+/*Hide focus outline for main content element*/
+main:focus-visible {
+	outline: -webkit-focus-ring-color auto 0px;
+}
+
+/* Make sure containers never lose their center alignment*/
+.container-medium, .container-small, .container-large {
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+/*Reset buttons, and links styles*/
+a {
+	color: inherit;
+	text-decoration: inherit;
+	font-size: inherit;
+}
+
+/*Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/*Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Lock text size above certain screen size */
+@media only screen and (min-width: 1440px) {
+     body {font-size: 15px;}
+}
+
+</style></div><main class="main-wrapper"><div class="page-wrapper"><div class="global-styles w-embed"><style>
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; 
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+</style></div><div class="shell2_wrapper"><div data-animation="over-left" class="sidebar1_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="1bfdb631-cd63-7443-6ded-f2a6b381033a" role="banner" data-duration="400"><div data-w-id="1bfdb631-cd63-7443-6ded-f2a6b381033b" class="sidebar1_container"><a href="/dashboard" aria-current="page" class="sidebar1_logo-link w-inline-block w--current"><img src="/assets/webflow/41eb655fb53dbde45ec5d820.svg" loading="lazy" alt="" class="dashboard-logo"/></a><nav role="navigation" class="sidebar1_menu w-nav-menu"><div class="sidebar1_menu-wrapper"><div class="sidebar1_logo-wrapper-tablet"><a href="#" class="sidebar1_logo-link-tablet w-inline-block"><img src="/assets/webflow/d237e608d96c129b6798cf4c.svg" loading="lazy" alt="" class="sidebar1_logo"/></a><div class="sidebar1_close-mobile"><div class="sidebar1_menu-button w-nav-button"><div class="icon-embed-small w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.1266 16.773L16.7729 17.1266C16.5777 17.3218 16.2611 17.3218 16.0658 17.1266L12 13.0607L7.9341 17.1265C7.73888 17.3218 7.42229 17.3218 7.22702 17.1265L6.87347 16.773C6.6782 16.5777 6.6782 16.2612 6.87347 16.0659L10.9394 12L6.87347 7.93413C6.6782 7.73891 6.6782 7.42232 6.87347 7.22705L7.22702 6.8735C7.42228 6.67824 7.73888 6.67824 7.9341 6.8735L12 10.9394L16.0658 6.8735C16.2611 6.67824 16.5777 6.67824 16.7729 6.8735L17.1266 7.22705C17.3218 7.42231 17.3218 7.73891 17.1266 7.93413L13.0607 12L17.1266 16.0659C17.3218 16.2612 17.3218 16.5777 17.1266 16.773Z" fill="currentColor"/>
+</svg></div></div></div></div><div id="w-node-_1bfdb631-cd63-7443-6ded-f2a6b3810346-b381033a" class="sidebar1_form_component w-form"><form name="wf-form-Search-1" data-name="Search 1" method="get" id="email-form" class="sidebar1_form" data-wf-page-id="66c01f3829fc359a03faf5b9" data-wf-element-id="1bfdb631-cd63-7443-6ded-f2a6b3810347"><div class="sidebar1_search"><input class="form_input is-search w-input" maxlength="256" name="field-9" data-name="Field 9" placeholder="Search" type="text" id="field-9"/><div class="form-icon-wrapper"><div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+<path d="M10 18C11.775 17.9996 13.4988 17.4054 14.897 16.312L19.293 20.708L20.707 19.294L16.311 14.898C17.405 13.4997 17.9996 11.7754 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18ZM10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10C4 6.691 6.691 4 10 4Z" fill="currentColor"/>
+</svg></div></div></div></form><div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div><div class="sidebar1_menu-top"><a href="/dashboard" aria-current="page" class="sidebar1_link w-inline-block w--current"><div class="sidebar1_link-wrapper"><img src="/assets/webflow/842740f1f7b2b1e84f970f7c.png" loading="lazy" alt="" class="icon-sidebar"/><div class="text-size-small">Home</div></div></a><div data-hover="false" data-delay="0" class="max-width-full w-dropdown"><div class="sidebar1_link w-dropdown-toggle"><div class="sidebar1_link-wrapper"><img src="/assets/webflow/b8e80cd1c0e2a87d2b7ef1a1.png" loading="lazy" alt="" class="icon-sidebar"/><div class="text-size-small">Online Course</div></div></div><nav class="background-color-dark border-radius-1em w-dropdown-list"><a href="/general-b/planning-estimating" class="text-size-small text-color-light w-dropdown-link">General B</a><a href="/law-business/business-organization-and-licensing" class="text-size-small text-color-light w-dropdown-link">Law &amp; business</a></nav></div><a href="/practice-tests" class="sidebar1_link w-inline-block"><img src="/assets/webflow/e89201295ce58cd9791f5d4c.png" loading="lazy" alt="" class="icon-sidebar"/><div class="sidebar1_link-wrapper"><div class="text-size-small">Practice Tests</div></div></a><a href="/flash-cards" class="sidebar1_link w-inline-block"><img src="/assets/webflow/ead962b11c423b4ab7362665.png" loading="lazy" width="20" alt="" class="icon-sidebar"/><div class="sidebar1_link-wrapper"><div class="text-size-small">Flash cards</div></div></a><a href="/application-guidance" class="sidebar1_link w-inline-block"><img src="/assets/webflow/8ab5380ed48af1bb131c2555.png" loading="lazy" alt="" class="icon-sidebar"/><div class="sidebar1_link-wrapper"><div class="text-size-small">Application</div></div></a><a href="#" class="sidebar1_link hide w-inline-block"><div class="sidebar1_link-wrapper"><img src="/assets/webflow/8ab5380ed48af1bb131c2555.png" loading="lazy" alt="" class="icon-sidebar"/><div class="text-size-small">Cheatsheets</div></div></a><a href="#" class="sidebar1_link hide w-inline-block"><div class="sidebar1_link-wrapper"><img src="/assets/webflow/ac27149d80c95576735755eb.png" loading="lazy" alt="" class="icon-sidebar"/><div class="text-size-small">Audio course </div></div></a></div><div class="sidebar1_menu-bottom"><div class="line-divider"></div><div class="sidebar1_link-list"><a href="/user-account" class="sidebar1_link w-inline-block"><div class="sidebar1_link-wrapper"><div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg></div><div>Account</div></div></a></div><div class="line-divider hide"></div><div class="sidebar1_account hide"><div class="sidebar1_avatar"><div id="w-node-_1bfdb631-cd63-7443-6ded-f2a6b3810381-b381033a" class="sidebar1_avatar-image-wrapper"><img src="/assets/webflow/4fa1dbaec11ac10c92bd6964.svg" loading="lazy" alt="" class="sidebar1_avatar-image"/></div><div id="w-node-_1bfdb631-cd63-7443-6ded-f2a6b3810383-b381033a" class="sidebar1_avatar-text-wrapper"><div class="text-size-small-3 text-weight-medium">Name Surname</div><div class="text-size-small-3">hello@relume.io</div></div></div><div data-hover="false" data-delay="200" data-w-id="1bfdb631-cd63-7443-6ded-f2a6b3810388" class="sidebar1_dropdown w-dropdown"><div class="sidebar1_dropdown-toggle w-dropdown-toggle"><div class="button-9 is-tertiary is-small is-icon-only"><div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM18 10C16.9 10 16 10.9 16 12C16 13.1 16.9 14 18 14C19.1 14 20 13.1 20 12C20 10.9 19.1 10 18 10ZM6 10C4.9 10 4 10.9 4 12C4 13.1 4.9 14 6 14C7.1 14 8 13.1 8 12C8 10.9 7.1 10 6 10Z" fill="currentColor"/>
+</svg></div></div></div><nav class="sidebar1_dropdown-list w-dropdown-list"><a href="#" class="sidebar1_dropdown-link w-dropdown-link">My Profile</a><a href="#" class="sidebar1_dropdown-link w-dropdown-link">Profile Settings</a><div class="sidebar1_dropdown-divider"></div><a href="#" class="sidebar1_dropdown-link w-dropdown-link">Log Out</a></nav></div></div></div></div></nav><div class="sidebar1_menu-button w-nav-button"><div class="menu-icon"><div class="menu-icon_line-top"></div><div class="menu-icon_line-middle"><div class="menu-icon_line-middle-inner"></div></div><div class="menu-icon_line-bottom"></div></div></div></div><div class="sidebar1_background-layer"></div></div><main class="shell2_main-wrapper border-radius-1em"><div class="section_shell2-layout"><div class="padding-horizontal-2 padding-medium"><div class="container-large-2"><div class="padding-vertical-3 padding-large"><div id="w-node-_6986a2a1-3320-14cd-2b48-3668a25e42d7-03faf5b9" class="w-layout-grid shell2-layout_component dashboard"><div id="w-node-_19212092-0001-e3d5-dd4b-d36aee77216e-03faf5b9" class="dashboard-tile _1"><div class="icon-1x1-large w-embed"><svg width="100%" height="100%" viewBox="0 0 76 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.0831 0.75C5.38238 0.75 0.75 5.40749 0.75 11.119C0.75 16.8303 5.38216 21.4948 11.0831 21.4948C16.3082 21.4948 20.6433 17.5759 21.3306 12.5243H47.3065C52.4496 12.5243 56.5552 16.6438 56.5552 21.8134C56.5552 26.9829 52.4499 31.0958 47.3065 31.0958H37.8259H28.3384C21.6777 31.0958 16.2882 36.5139 16.2882 43.1888C16.2882 49.8638 21.6778 55.2795 28.3384 55.2795H54.3142C54.9977 60.3344 59.334 64.25 64.5619 64.25C70.2625 64.25 74.895 59.5948 74.895 53.8832C74.895 48.1719 70.2628 43.5075 64.5619 43.5075C59.3368 43.5075 55.0017 47.4264 54.3144 52.4779H28.3384C23.1954 52.4779 19.0898 48.3585 19.0898 43.1888C19.0898 38.0191 23.1954 33.8974 28.3384 33.8974H37.8259H47.3065C53.967 33.8974 59.3568 28.4886 59.3568 21.8134C59.3568 15.1385 53.9672 9.72271 47.3065 9.72271H21.3308C20.6473 4.66789 16.3111 0.75 11.0831 0.75ZM11.0831 3.55386C15.2579 3.55386 18.6235 6.92169 18.6235 11.119C18.6235 15.3167 15.2575 18.6932 11.0831 18.6932C6.90899 18.6932 3.55162 15.3171 3.55162 11.119C3.55162 6.92132 6.90862 3.55386 11.0831 3.55386ZM64.5619 46.3091C68.7363 46.3091 72.1001 49.6854 72.1001 53.8832C72.1001 58.0807 68.7366 61.4484 64.5619 61.4484C60.3871 61.4484 57.0215 58.0806 57.0215 53.8832C57.0215 49.6855 60.3875 46.3091 64.5619 46.3091Z" fill="black" stroke="black" stroke-width="0.5"/>
+</svg></div><div class="margin-top margin-medium"><h4>Recommend Pathway</h4><div class="spacer-xsmall"></div><div class="w-richtext"><ol role="list"><li>Start with the practice tests to get a baseline</li><li>Read course material</li><li>Use flashcards to quickly review topics</li><li>Retake practice tests to gauge readiness</li><li>Repeat as necessary</li></ol></div><div class="spacer-xsmall"></div><a href="https://cslb.ca.gov/Resources/StudyGuides/BStudyGuide.pdf" class="button-third is-small w-button">CSLB Study guide</a></div></div><a id="w-node-_50c51a16-e814-2e1c-30c5-ee877cd291ef-03faf5b9" href="/general-b/planning-estimating" class="dashboard-tile w-inline-block"><div class="icon-1x1-large w-embed"><svg width="100%" height="100%" viewBox="0 0 97 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M50.0377 4.1328V6.50619L2.01171 6.50229H2.0117C1.67504 6.50229 1.38209 6.61479 1.17288 6.82342C0.963606 7.03212 0.85 7.32519 0.85 7.66399V78.676C0.85 79.0126 0.962494 79.3056 1.17113 79.5148C1.37983 79.7241 1.67289 79.8377 2.0117 79.8377H89.3867C89.7234 79.8377 90.0163 79.7252 90.2255 79.5166C90.4348 79.3079 90.5484 79.0148 90.5484 78.676L90.5445 16.8907C91.1777 17.4912 91.7603 18.219 92.4076 19.0276C92.4716 19.1076 92.5363 19.1884 92.6017 19.2699L92.6068 19.2763L92.6126 19.2821C93.0275 19.6969 93.5714 20.033 94.1328 20.033C94.466 20.033 94.7885 19.9235 95.0053 19.8156C95.976 19.3848 96.4164 18.4103 96.1978 17.5306C95.1818 12.0972 92.7407 7.97111 88.8795 5.19321C85.0204 2.41681 79.7588 0.998752 73.1224 0.947604V0.9476H73.1212H69.7892C68.9016 0.9476 68.24 1.18319 67.7458 1.53111C67.2532 1.87794 66.9361 2.3298 66.7255 2.74906L66.7235 2.75302C66.6264 2.94527 66.4648 3.26542 65.9878 3.5449C65.5013 3.82994 64.6722 4.0805 63.2228 4.0805C62.1255 4.0805 61.446 3.90569 61.0084 3.66933C60.5821 3.43898 60.3731 3.14349 60.2301 2.86271C60.1207 2.48979 59.8801 1.98966 59.4041 1.58016C58.9197 1.16339 58.2024 0.85 57.1603 0.85H53.3205C51.5189 0.85 50.0377 2.33126 50.0377 4.1328ZM66.9175 36.9505V36.9536V37.0538V37.0551L66.2065 73.8222V73.8251C66.2065 74.3791 66.4445 74.816 66.8271 75.1528C67.2053 75.4858 67.7242 75.7212 68.2964 75.8885C69.441 76.2233 70.8471 76.2993 71.9112 76.2993C72.9754 76.2993 74.3815 76.2233 75.5261 75.8885C76.0983 75.7212 76.6172 75.4858 76.9954 75.1529C77.378 74.816 77.6159 74.3791 77.616 73.8251L77.6159 73.8222L76.5086 17.9653C77.298 17.6388 77.8933 17.0435 78.3729 16.5638L78.3806 16.5561L78.4717 16.465L78.474 16.4635C78.7713 16.2653 79.077 16.0616 79.3864 15.7534C81.3832 14.156 83.1613 13.474 85.0213 13.6688C85.9909 13.865 87.0605 14.2485 88.2254 15.0143V77.5107L37.6154 77.5146V66.8556C37.6154 66.519 37.5029 66.226 37.2943 66.0168C37.0856 65.8075 36.7925 65.6939 36.4537 65.6939C36.117 65.6939 35.8241 65.8064 35.6149 66.015C35.4056 66.2237 35.292 66.5168 35.292 66.8556V77.5146H3.174V44.5806H35.3V54.8326C35.3 55.1693 35.4125 55.4622 35.6211 55.6714C35.8298 55.8807 36.1229 55.9943 36.4617 55.9943C36.7984 55.9943 37.0913 55.8818 37.3005 55.6732C37.5098 55.4645 37.6234 55.1714 37.6234 54.8326L37.6156 31.8056C37.6156 31.4689 37.5031 31.176 37.2945 30.9668C37.0858 30.7575 36.7927 30.6439 36.4539 30.6439C36.1172 30.6439 35.8243 30.7564 35.6151 30.965C35.4058 31.1737 35.2922 31.4668 35.2922 31.8056L35.296 42.2606H3.17409V8.82261H35.3001V19.7816C35.3001 20.1183 35.4126 20.4112 35.6212 20.6204C35.8299 20.8297 36.123 20.9433 36.4618 20.9433C36.7985 20.9433 37.0914 20.8308 37.3006 20.6222C37.5099 20.4135 37.6235 20.1204 37.6235 19.7816V8.82261H50.0425V14.8328C50.0425 16.6345 51.5238 18.1156 53.3253 18.1156H57.2667C58.7192 18.1156 59.8997 17.4911 60.3358 16.3024C60.4765 15.9774 60.681 15.707 61.0948 15.5119C61.5198 15.3115 62.1753 15.1859 63.2276 15.1859C63.8783 15.1859 64.5941 15.2365 65.218 15.42C65.8416 15.6035 66.3537 15.9136 66.6301 16.4184C66.8335 16.8206 67.0366 17.0366 67.3185 17.3194L66.9175 36.9505ZM85.1603 11.3513L85.1526 11.3505H85.1448H84.3362C82.1716 11.3505 79.9166 12.2791 77.7771 14.0089L77.7709 14.0138L77.7653 14.0194L77.6638 14.121C77.5609 14.2239 77.4648 14.3198 77.3823 14.3904C77.3411 14.4257 77.3074 14.451 77.2813 14.4668C77.2685 14.4745 77.2607 14.478 77.2572 14.4794H77.2038L77.1599 14.5233L76.7536 14.9296C76.4474 15.2358 76.23 15.4525 76.028 15.5953C75.8334 15.7328 75.6609 15.7958 75.4456 15.7958H69.5862C69.2449 15.7958 69.0432 15.7464 68.9202 15.6851C68.8032 15.6268 68.7477 15.553 68.7081 15.4754L68.7082 15.4753L68.7062 15.4716C68.3938 14.8992 67.8971 14.2457 67.035 13.7366C66.1737 13.228 64.9585 12.8701 63.219 12.8701C61.4003 12.8701 59.1838 13.1721 58.2335 15.3867L58.2288 15.3976L58.2259 15.4092C58.1935 15.5375 58.076 15.6379 57.8795 15.7073C57.6869 15.7753 57.4534 15.7998 57.2619 15.7998H53.3244C52.885 15.7998 52.365 15.4474 52.365 14.8404V4.12539C52.365 3.68599 52.7174 3.16599 53.3244 3.16599H57.1642C57.6076 3.16599 57.8209 3.24121 57.9334 3.32584C58.0425 3.40784 58.0812 3.51454 58.1309 3.6678L58.1304 3.66797L58.1354 3.67985C58.7112 5.04227 59.7616 5.72283 60.7755 6.06064C61.7835 6.39646 62.7631 6.39646 63.2201 6.39646H63.2228C66.08 6.39646 67.9679 5.4747 68.8116 3.68543L68.8154 3.67736L68.8182 3.66889C68.8612 3.53987 68.9179 3.45168 69.0378 3.38747C69.1688 3.31728 69.3906 3.26755 69.7853 3.26755H73.1167C79.1093 3.31827 83.7733 4.50154 87.187 6.83943C90.4522 9.07553 92.5887 12.3782 93.6453 16.796C90.755 13.4482 88.0137 11.6485 85.1603 11.3513ZM74.6929 38.7428L75.2939 73.5363C75.0312 73.6755 74.5799 73.7904 74.0077 73.8709C73.388 73.9581 72.6501 74.002 71.9102 74.002C71.1704 74.002 70.4325 73.9581 69.8128 73.8709C69.2407 73.7904 68.7896 73.6755 68.5269 73.5364L69.2287 38.7425C69.9289 38.8365 70.8774 38.9238 71.9102 38.9238C73.1296 38.9238 74.0051 38.8367 74.6929 38.7428ZM74.1854 18.3187L74.5857 36.3332C74.0209 36.4613 72.999 36.5282 71.961 36.5282C70.9226 36.5282 69.9003 36.4612 69.3356 36.333L69.632 18.3187H74.1854Z" fill="black" stroke="black" stroke-width="0.3"/>
+</svg></div><div class="margin-top margin-medium"><h3>General B Trade Course</h3></div></a><a id="w-node-_3689e06a-48df-1b83-50b5-66f2c9124a9d-03faf5b9" href="/law-business/business-organization-and-licensing" class="dashboard-tile w-inline-block"><div class="icon-1x1-large w-embed"><svg width="100%" height="100%" viewBox="0 0 96 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M78.4564 30.4486C79.3034 29.7415 80.013 28.7234 80.013 27.2013V14.3992C80.013 11.7673 77.8441 9.59826 75.2122 9.59838H56.0122V4.79458C56.0122 2.16263 53.834 0 51.202 0H28.8047C26.1727 0 24.0101 2.16263 24.0101 4.79458V9.59838H4.80078C2.16888 9.59838 0 11.7673 0 14.3992V27.2013C0 28.5399 0.65609 29.7325 1.50962 30.48C2.36313 31.2275 3.36323 31.6399 4.34133 31.9333L28.3233 39.5063C30.4074 40.2471 31.4177 37.0455 29.286 36.4558L5.27116 28.8734C4.54011 28.6545 3.94147 28.352 3.61934 28.0701C3.2972 27.7877 3.20052 27.636 3.20052 27.2013V14.3992C3.20052 13.485 3.88672 12.7989 4.80078 12.7989H75.2122C76.1263 12.7989 76.8124 13.485 76.8124 14.3992V27.2013C76.8124 27.4826 76.7448 27.7069 76.403 27.992C76.066 28.2733 75.4138 28.595 74.6433 28.9046L50.7269 36.4558C48.5952 37.0455 49.6056 40.2471 51.6896 39.5063L75.7497 31.9067C76.6673 31.542 77.6095 31.1557 78.4564 30.4486ZM28.8047 3.20057H51.202C52.1164 3.20057 52.8086 3.88033 52.8086 4.79458V9.59838H27.1981V4.79458C27.1981 3.88033 27.8904 3.20057 28.8047 3.20057ZM35.2088 31.999C34.319 31.9958 33.5972 32.7187 33.6023 33.6085V44.8072C33.6023 48.3257 36.4849 51.2083 40.0034 51.2083C43.5219 51.2083 46.4075 48.3257 46.4075 44.8072V33.6085C46.4123 32.7236 45.6985 32.0025 44.8135 31.999H35.2088ZM4.7789 35.1776C3.88892 35.1837 3.17693 35.9192 3.19426 36.8091V68.8111C3.19426 71.4431 5.37249 73.6057 8.00442 73.6057H60.8067C62.8938 73.5573 62.8938 70.4513 60.8067 70.4051H8.00442C7.09027 70.4051 6.39478 69.7253 6.39478 68.8111V36.8091C6.41238 35.907 5.68113 35.1687 4.7789 35.1776ZM73.6213 36.8126V40.0881C68.2269 40.4419 66.4633 43.1551 62.4226 43.2136C60.9349 43.2136 59.3338 42.624 58.7439 42.0792C57.1056 40.5667 55.0624 42.9707 56.4904 44.3482C57.546 45.3664 59.1801 45.9396 60.0754 46.1423L54.5526 58.5724C54.4644 58.7775 54.4218 58.9994 54.4244 59.2225C54.4244 59.2225 54.402 61.1505 55.3933 63.1324C56.3842 65.1143 58.4557 67.2175 62.4195 67.2175C66.3832 67.2175 68.4577 65.1143 69.4487 63.1324C70.4397 61.1505 70.4145 59.2225 70.4145 59.2225C70.4177 58.9993 70.3746 58.7774 70.2863 58.5724L64.7667 46.1517C68.039 45.6321 69.9609 43.2217 75.1996 43.2198C80.4586 43.2259 82.3797 45.6436 85.6576 46.164L80.1379 58.585C80.0497 58.79 80.0066 59.0119 80.0098 59.2351C80.0098 59.2351 79.985 61.163 80.9755 63.145C81.9665 65.1269 84.041 67.23 88.0048 67.23C91.9686 67.23 94.04 65.1269 95.0309 63.145C96.0222 61.163 95.9998 59.2351 95.9998 59.2351C96.003 59.0119 95.9599 58.7899 95.8717 58.585L90.3489 46.1548C91.2442 45.9522 92.8782 45.379 93.9339 44.3607C95.3618 42.9832 93.3186 40.5791 91.6804 42.0915C91.0905 42.6365 89.4894 43.2261 88.0016 43.2261C83.961 43.1656 82.1974 40.4543 76.803 40.1007V36.8252C76.8126 35.9407 76.1087 35.2157 75.2122 35.1998C74.3156 35.203 73.6113 35.9285 73.6213 36.8126ZM36.8028 35.2026H43.2039V44.8072C43.2039 46.6079 41.8041 48.0078 40.0034 48.0078C38.2026 48.0078 36.8028 46.6079 36.8028 44.8072V35.2026ZM75.2184 46.392C74.4181 46.392 73.6213 46.9253 73.6213 47.9921V70.4208H67.139C64.9785 70.5678 65.1255 73.6742 67.2141 73.6214H75.1997V73.6334H83.2104C85.2988 73.6878 85.4459 70.5798 83.2855 70.433H76.8032V48.0041C76.8032 46.9455 76.0186 46.4152 75.2248 46.4068V46.3887L75.2184 46.392ZM62.4195 48.7548L66.3514 57.6124H58.4907L62.4195 48.7548ZM88.0049 48.7669L91.9336 57.6246H84.073L88.0049 48.7669ZM57.9063 60.8158H66.9358C66.9358 60.8158 66.3718 64.0162 62.4226 64.0162C58.4734 64.0162 57.9063 60.8158 57.9063 60.8158ZM83.4885 60.8278H92.5181C92.5181 60.8278 91.9509 64.0283 88.0018 64.0283C84.0526 64.0283 83.4885 60.8278 83.4885 60.8278Z" fill="black"/>
+</svg></div><div class="margin-top margin-medium"><h3>Law &amp; Business Course</h3></div></a><a id="w-node-_7a66f8cc-d876-e32e-9797-663d209e79df-03faf5b9" href="/practice-tests" class="dashboard-tile w-inline-block"><div class="icon-1x1-large w-embed"><svg width="100%" height="100%" viewBox="0 0 89 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M63.9679 14.5697L53.4879 4.08967V12.3397C53.4879 13.5663 54.4801 14.5663 55.7067 14.5702L63.9679 14.5697ZM21.4089 14.058H10.1469V25.308H21.4089V14.058ZM8.95587 11.6713H22.5969C22.9133 11.6673 23.2219 11.7923 23.4445 12.015C23.6711 12.2377 23.7961 12.5423 23.7961 12.8588V26.5108C23.7961 27.1709 23.2609 27.71 22.5969 27.71H8.95589C8.29573 27.71 7.75669 27.1709 7.75669 26.5108V12.8588C7.75669 12.5423 7.8856 12.2377 8.10825 12.015C8.33481 11.7923 8.63946 11.6673 8.95587 11.6713ZM17.7371 16.851C18.1941 16.4213 18.9051 16.4135 19.366 16.8353C19.8308 17.2572 19.8933 17.9642 19.5066 18.4603L15.8269 22.5189C15.6003 22.7767 15.2722 22.9252 14.9284 22.9252C14.5847 22.9252 14.2566 22.7767 14.0261 22.5189L12.0261 20.1205C11.7917 19.8822 11.6628 19.5541 11.6784 19.2221C11.6941 18.8861 11.8503 18.5697 12.1042 18.3549C12.362 18.1401 12.698 18.0424 13.03 18.0815C13.362 18.1244 13.6628 18.3041 13.8581 18.5775L14.987 19.9291L17.7487 16.9291L17.7371 16.851ZM21.409 64.6909H10.147V75.9409H21.409V64.6909ZM8.95997 62.2925L22.597 62.2886C23.261 62.2886 23.7962 62.8277 23.7962 63.4878V77.1398C23.7962 77.4563 23.6712 77.7609 23.4446 77.9836C23.2219 78.2063 22.9134 78.3313 22.5969 78.3273H8.95595C8.63954 78.3313 8.33486 78.2063 8.10829 77.9836C7.88563 77.7609 7.75673 77.4563 7.75673 77.1398V63.4878C7.75673 62.8277 8.29579 62.2886 8.95593 62.2886L8.95997 62.2925ZM17.7412 67.484L17.7373 67.48C17.9443 67.2144 18.249 67.0504 18.581 67.0191C18.917 66.9918 19.2451 67.1011 19.4912 67.3277C19.7412 67.5543 19.8818 67.8707 19.8857 68.2066C19.8896 68.5386 19.7529 68.8589 19.5068 69.0894L15.8271 73.148C15.6005 73.4097 15.2724 73.5543 14.9287 73.5543C14.5849 73.5543 14.2568 73.4097 14.0263 73.148L12.0263 70.7378C11.6044 70.2339 11.6708 69.4839 12.1787 69.0581C12.6826 68.6362 13.4365 68.7026 13.8584 69.2105L14.9873 70.5621L17.749 67.5621L17.7412 67.484ZM21.4092 39.371H10.1472V50.629H21.4092V39.371ZM8.95617 36.9999H22.5972C22.9175 36.9959 23.2222 37.1209 23.4487 37.3475C23.6753 37.5741 23.8003 37.8827 23.7964 38.1991V51.8201C23.8003 52.1404 23.6753 52.4451 23.4487 52.6716C23.2222 52.8982 22.9175 53.0232 22.5972 53.0193H8.95617C8.63976 53.0232 8.33117 52.8982 8.10461 52.6716C7.88195 52.4451 7.75695 52.1404 7.75695 51.8201V38.1791C7.75695 37.8588 7.88195 37.5541 8.10461 37.3275C8.33117 37.101 8.63977 36.976 8.95617 36.9799V36.9999ZM18.9562 46.4999C19.2609 46.6952 19.464 47.0194 19.503 47.3788C19.5421 47.7381 19.4171 48.0975 19.1632 48.3553C18.9093 48.6092 18.5538 48.7381 18.1905 48.703C17.8312 48.6678 17.5069 48.4725 17.3077 48.1717L15.8272 46.6912L14.3077 48.1717C14.0929 48.4295 13.7765 48.5858 13.4405 48.6014C13.1046 48.617 12.7765 48.4881 12.5382 48.2499C12.2999 48.0116 12.171 47.6835 12.1866 47.3475C12.2023 47.0116 12.3585 46.6952 12.6163 46.4803L14.089 44.9998L12.6085 43.5193C12.3663 43.2967 12.2218 42.9881 12.2179 42.66C12.2101 42.3318 12.339 42.0154 12.5695 41.781C12.8038 41.5506 13.1202 41.4256 13.4484 41.4334C13.7765 41.4412 14.089 41.5857 14.3078 41.8279L15.7883 43.3084L17.3078 41.8279C17.5226 41.5701 17.839 41.4139 18.1749 41.3982C18.5109 41.3826 18.839 41.5115 19.0773 41.7498C19.3156 41.9881 19.4445 42.3162 19.4288 42.6521C19.4132 42.9881 19.257 43.3045 18.9992 43.5193L17.468 44.9998L18.9485 46.4803L18.9562 46.4999ZM28.1554 75.5899H28.1593C27.4952 75.5899 26.9562 75.0547 26.9562 74.3907C26.9562 73.7266 27.4952 73.1915 28.1593 73.1915H49.3073C49.9713 73.1915 50.5065 73.7266 50.5065 74.3907C50.5065 75.0547 49.9713 75.5899 49.3073 75.5899H28.1554ZM28.1554 67.4688H28.1593C27.8233 67.5 27.4874 67.3906 27.2413 67.1602C26.9913 66.9336 26.8468 66.6133 26.8468 66.2734C26.8468 65.9375 26.9913 65.6172 27.2413 65.3867C27.4874 65.1602 27.8233 65.0508 28.1593 65.0781H49.4563C49.7922 65.0508 50.1281 65.1602 50.3742 65.3867C50.6242 65.6172 50.7688 65.9375 50.7688 66.2734C50.7688 66.6133 50.6242 66.9336 50.3742 67.1602C50.1282 67.3906 49.7922 67.5 49.4563 67.4688H28.1554ZM28.1554 50.2778L28.1593 50.2817C27.4952 50.2817 26.9562 49.7426 26.9562 49.0786C26.9562 48.4184 27.4952 47.8794 28.1593 47.8794H55.1593C55.8194 47.8794 56.3585 48.4184 56.3585 49.0786C56.3585 49.7426 55.8194 50.2817 55.1593 50.2817L28.1554 50.2778ZM28.1554 42.1567L28.1593 42.1606C27.4952 42.1606 26.9562 41.6215 26.9562 40.9614C26.9562 40.2973 27.4952 39.7622 28.1593 39.7622H58.3073C58.9713 39.7622 59.5065 40.2973 59.5065 40.9614C59.5065 41.6215 58.9713 42.1606 58.3073 42.1606L28.1554 42.1567ZM28.1554 24.9577L28.1593 24.9616C27.8233 24.9928 27.4874 24.8795 27.2413 24.653C26.9913 24.4264 26.8468 24.1022 26.8468 23.7662C26.8468 23.4264 26.9913 23.1061 27.2413 22.8795C27.4874 22.653 27.8233 22.5397 28.1593 22.5709H61.3073C61.9245 22.6256 62.3971 23.1452 62.3971 23.7662C62.3971 24.3873 61.9244 24.9029 61.3073 24.9615L28.1554 24.9577ZM28.1554 16.8483L28.1593 16.8522C27.4952 16.8522 26.9562 16.3131 26.9562 15.6491C26.9562 14.9889 27.4952 14.4499 28.1593 14.4499H46.7683C47.4284 14.4499 47.9675 14.9889 47.9675 15.6491C47.9675 16.3131 47.4284 16.8522 46.7683 16.8522L28.1554 16.8483ZM64.8394 69.5783L56.2066 66.1213L55.5464 80.1213L64.8355 69.5703L64.8394 69.5783ZM84.3084 23.0003L86.1287 18.5198C86.4841 17.7033 86.1326 16.7464 85.3279 16.3596L78.6677 13.6604C77.82 13.3713 76.9021 13.8166 76.5974 14.6604L74.7576 19.1799L84.3084 23.0003ZM82.41 27.6917L72.8592 23.8636L73.8592 21.3948L83.3983 25.2229L82.3983 27.6917H82.41ZM66.199 67.5507L81.469 29.8907L71.9182 26.0626L56.6482 63.7186L66.199 67.5467V67.5507ZM68.0584 29.2307L70.1365 24.0588L70.2068 23.9103L74.3084 13.7303C74.6873 12.7342 75.449 11.9295 76.4256 11.4998C77.3982 11.0662 78.5037 11.0428 79.4998 11.4295L86.1482 14.1209C87.1521 14.5271 87.9529 15.3201 88.3591 16.3279C88.7653 17.3318 88.7458 18.4568 88.3083 19.449L68.0583 69.34V85.34C68.0661 86.5705 67.5817 87.7541 66.7145 88.6291C65.8512 89.5041 64.6715 89.9963 63.4372 90.0002H4.6172C2.0703 89.9963 0.0039 87.9299 0 85.3791V4.6211C0.003906 2.0703 2.0703 0.0039 4.6172 0H52.3082C52.6324 0 52.941 0.12891 53.1676 0.35938L67.8086 15.0004C67.9687 15.2074 68.0586 15.4652 68.0586 15.7309L68.0584 29.2307ZM53.8984 64.3987L52.9999 83.3476V83.3516C52.9452 83.8672 53.2343 84.3594 53.707 84.5704C54.1835 84.7813 54.7422 84.6602 55.0898 84.2696L65.6598 72.2696V85.3786C65.6519 86.6052 64.6637 87.5934 63.4371 87.6013H4.61706C3.39436 87.5935 2.40226 86.6052 2.39826 85.3786V4.62058C2.40216 3.39398 3.39435 2.40578 4.61706 2.39788H51.0901V12.3393C51.0822 13.5698 51.5627 14.7534 52.4299 15.6284C53.297 16.5034 54.4768 16.9956 55.7072 16.9995H65.6564L65.6603 35.1405L53.9803 63.9415C53.9178 64.086 53.8906 64.2424 53.8984 64.3987Z" fill="black"/>
+</svg></div><div class="margin-top margin-medium"><h3>Practice Exams</h3></div></a><a id="w-node-_3340ded5-5295-6649-2450-1b97c9c096af-03faf5b9" href="/flash-cards" class="dashboard-tile w-inline-block"><div class="icon-1x1-large w-embed"><svg width="100%" height="100%" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.5098 6.24023H0.75C0.335938 6.24023 0 6.57617 0 6.99023V18.4297C0 18.8438 0.335938 19.1797 0.75 19.1797H20.5098C20.9238 19.1797 21.2598 18.8438 21.2598 18.4297V6.99023C21.2598 6.57617 20.9238 6.24023 20.5098 6.24023ZM19.7598 17.6797H1.5V7.74023H19.7598V17.6797ZM24.3799 3.87012V15.3096C24.3799 15.7236 24.0439 16.0596 23.6299 16.0596C23.2158 16.0596 22.8799 15.7236 22.8799 15.3096V4.62012H3.87012C3.45605 4.62012 3.12012 4.28418 3.12012 3.87012C3.12012 3.45605 3.45605 3.12012 3.87012 3.12012H23.6299C24.0439 3.12012 24.3799 3.45605 24.3799 3.87012ZM27.5 0.75V12.1895C27.5 12.6035 27.1641 12.9395 26.75 12.9395C26.3359 12.9395 26 12.6035 26 12.1895V1.5H6.99023C6.57617 1.5 6.24023 1.16406 6.24023 0.75C6.24023 0.335938 6.57617 0 6.99023 0H26.75C27.1641 0 27.5 0.335938 27.5 0.75Z" fill="black"/>
+</svg></div><div class="margin-top margin-medium"><h3>Flashcards</h3></div></a><a id="w-node-ccf653e2-7e23-fd8a-008e-311f3769bb73-03faf5b9" href="/application-guidance" class="dashboard-tile w-inline-block"><div class="icon-1x1-large w-embed"><svg width="100%" height="100%" viewBox="0 0 74 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.8319 83.1951H42.1369C42.7111 83.1951 43.176 82.7302 43.176 82.156C43.176 81.5779 42.7112 81.113 42.1369 81.113H4.8319C3.6835 81.113 2.7499 80.1794 2.7499 79.031V9.31998C2.7499 8.17158 3.68349 7.23798 4.8319 7.23798H5.8749V73.906C5.8749 75.0115 6.3124 76.0701 7.0937 76.8513C7.875 77.6325 8.9375 78.0701 10.0429 78.0701H47.2929C47.5702 78.074 47.8359 77.9646 48.0312 77.7693L61.5742 64.2263C61.7695 64.031 61.875 63.7654 61.875 63.488V46.375C61.875 45.7969 61.4101 45.332 60.832 45.332C60.2577 45.332 59.7929 45.7969 59.7929 46.375V61.332H49.3009C47.0001 61.332 45.1368 63.1992 45.1368 65.5V75.988H9.98876C8.84036 75.988 7.90676 75.0544 7.90676 73.906V4.16402C7.90676 3.01562 8.84035 2.08202 9.98876 2.08202H57.7388C58.2935 2.08202 58.8208 2.30077 59.2115 2.6914C59.6021 3.08202 59.8247 3.61328 59.8247 4.1641V9.3203C59.8247 9.89842 60.2896 10.3633 60.8638 10.3633C61.442 10.3633 61.9068 9.89846 61.9068 9.3203V4.1641C61.9068 3.0586 61.4693 2 60.688 1.2188C59.9067 0.4376 58.8442 0 57.7388 0H9.98884C7.68804 0 5.82474 1.8633 5.82474 4.1641V5.2071H4.78174C2.48094 5.2071 0.613739 7.0743 0.613739 9.3751V79.1131C0.660614 81.4022 2.5428 83.2264 4.8319 83.1951ZM49.3009 63.4021H59.4459L47.2509 75.5701V65.4681C47.2665 64.3392 48.1767 63.4329 49.3017 63.4134L49.3009 63.4021ZM31.3239 7.23808C31.3239 6.96074 31.2145 6.69511 31.0192 6.4998C30.8239 6.30449 30.5583 6.19511 30.2809 6.19511H13.0429C12.4648 6.19511 11.9999 6.66386 11.9999 7.23811V24.4571C11.9999 24.7344 12.1093 25.0001 12.3046 25.1954C12.4999 25.3907 12.7656 25.5001 13.0429 25.5001H30.2809C30.5582 25.5001 30.8239 25.3907 31.0192 25.1954C31.2145 25.0001 31.3239 24.7344 31.3239 24.4571L31.3239 7.23808ZM29.2419 23.3941H14.0819V8.28108H29.2379L29.2419 23.3941ZM38.6169 7.23808H38.613C38.613 6.66386 39.0817 6.19508 39.656 6.19508H54.644C55.2221 6.19508 55.687 6.66383 55.687 7.23808C55.687 7.81233 55.2222 8.28108 54.644 8.28108H39.675C39.1008 8.28108 38.6359 7.81233 38.6359 7.23808H38.6169ZM38.6169 11.4061H38.613C38.613 10.828 39.0817 10.3631 39.656 10.3631H54.644C55.2221 10.3631 55.687 10.8279 55.687 11.4061C55.687 11.9803 55.2222 12.4452 54.644 12.4452H39.675C39.1008 12.4452 38.6359 11.9803 38.6359 11.4061H38.6169ZM38.6169 15.5194H38.613C38.613 14.9452 39.0817 14.4764 39.656 14.4764H49.4177C49.9919 14.4764 50.4568 14.9451 50.4568 15.5194C50.4568 16.0936 49.992 16.5624 49.4177 16.5624H39.6755C39.3982 16.5624 39.1286 16.4491 38.9333 16.2499C38.738 16.0507 38.6286 15.7772 38.6364 15.4999L38.6169 15.5194ZM38.6169 19.6874H38.613C38.613 19.1093 39.0817 18.6444 39.656 18.6444H47.3318C47.9099 18.6444 48.3748 19.1092 48.3748 19.6874C48.3748 20.2616 47.91 20.7265 47.3318 20.7265H39.6756C39.3904 20.7265 39.1131 20.6093 38.9178 20.4023C38.7186 20.1913 38.617 19.9101 38.6365 19.6249L38.6169 19.6874ZM31.0622 31.3434C31.0622 31.6168 30.9528 31.8824 30.7575 32.0778C30.5622 32.2731 30.2966 32.3825 30.0192 32.3825H13.0422C12.4641 32.3825 11.9992 31.9176 11.9992 31.3433C11.9992 30.7652 12.4641 30.3004 13.0422 30.3004H30.0192C30.2966 30.3004 30.5622 30.4097 30.7575 30.605C30.9528 30.8003 31.0622 31.066 31.0622 31.3434ZM31.0622 35.5114V35.5075C31.0622 35.7848 30.9528 36.0504 30.7575 36.2458C30.5622 36.4411 30.2966 36.5504 30.0192 36.5504H13.0422C12.4641 36.5504 11.9992 36.0856 11.9992 35.5074C11.9992 34.9332 12.4641 34.4683 13.0422 34.4683H30.0192C30.5817 34.4683 31.0387 34.9098 31.0622 35.4683L31.0622 35.5114ZM31.0622 39.6794V39.6755C31.0622 39.9528 30.9528 40.2184 30.7575 40.4138C30.5622 40.6091 30.2966 40.7184 30.0192 40.7184H13.0422C12.4641 40.7184 11.9992 40.2497 11.9992 39.6754C11.9992 39.1012 12.4641 38.6324 13.0422 38.6324H30.0192C30.5661 38.6324 31.0192 39.0504 31.0622 39.5934L31.0622 39.6794ZM31.0622 43.7927V43.7888C31.0622 44.0661 30.9528 44.3317 30.7575 44.5271C30.5622 44.7224 30.2966 44.8317 30.0192 44.8317H13.0422C12.4641 44.8317 11.9992 44.3669 11.9992 43.7887C11.9992 43.2145 12.4641 42.7496 13.0422 42.7496H30.0192C30.5622 42.7457 31.0153 43.1598 31.0622 43.695L31.0622 43.7927ZM31.0622 47.9607V47.9568C31.0622 48.2341 30.9528 48.4997 30.7575 48.6951C30.5622 48.8904 30.2966 48.9997 30.0192 48.9997H13.0422C12.4641 48.9997 11.9992 48.531 11.9992 47.9567C11.9992 47.3825 12.4641 46.9137 13.0422 46.9137H30.0192C30.5622 46.9137 31.0153 47.3239 31.0622 47.863L31.0622 47.9607ZM31.0622 52.1287V52.1248C31.0622 52.3982 30.9528 52.6638 30.7575 52.8592C30.5622 53.0545 30.2966 53.1638 30.0192 53.1638H13.0422C12.4641 53.1638 11.9992 52.699 11.9992 52.1247C11.9992 51.5466 12.4641 51.0817 13.0422 51.0817H30.0192C30.5348 51.0739 30.9802 51.4489 31.0622 51.9567L31.0622 52.1287ZM31.0622 56.2967V56.2889C31.0622 56.5662 30.9528 56.8318 30.7575 57.0271C30.5622 57.2225 30.2966 57.3318 30.0192 57.3318H13.0422C12.4641 57.3318 11.9992 56.867 11.9992 56.2888C11.9992 55.7146 12.4641 55.2497 13.0422 55.2497H30.0192C30.5231 55.238 30.9606 55.5896 31.0622 56.0818L31.0622 56.2967ZM61.5312 15.6717V15.6639C60.832 15.2186 59.9843 15.0701 59.1757 15.2498C58.3671 15.4295 57.664 15.9217 57.2187 16.6248L48.3242 30.4138C47.3984 31.8708 47.8281 33.8005 49.2812 34.7263L50.8945 35.7693L38.8635 54.6563C38.762 54.8204 38.7073 55.0118 38.6995 55.2071L38.637 62.5001C38.637 62.7735 38.7463 63.0391 38.9417 63.2345C39.137 63.4298 39.4026 63.5392 39.676 63.5392C39.8284 63.5587 39.9807 63.5392 40.1253 63.4884L46.7073 60.3634C46.883 60.2774 47.0315 60.1446 47.1369 59.9767L47.844 58.8712L68.957 25.6642L72.8125 19.6134C73.7187 18.1681 73.2969 16.2618 71.8633 15.3322L68.8321 13.383C68.1368 12.9455 67.293 12.8009 66.4883 12.9767C65.6836 13.1525 64.9805 13.6447 64.543 14.3439L63.1563 16.5197L61.5312 15.6717ZM46.6442 56.8127L41.8825 53.7932L61.8865 22.3952L66.6482 25.4147L46.6442 56.8127ZM50.0817 31.5427L58.9801 17.5697C59.1285 17.3353 59.3629 17.1712 59.6364 17.1127C59.7067 17.1009 59.7809 17.1009 59.8551 17.1127C60.0543 17.1127 60.2496 17.1712 60.4176 17.2806L62.0309 18.3236L61.9489 18.4682L60.6872 20.437L52.0192 34.007L50.3942 32.9639V32.9679C49.9176 32.6554 49.7809 32.0225 50.0817 31.5382L50.0817 31.5427ZM40.7809 55.5507L45.5192 58.5624L40.7262 60.8554L40.7809 55.5507ZM66.3009 15.4567C66.4493 15.2301 66.6759 15.07 66.9376 15.0075C67.2032 14.9528 67.4806 14.9996 67.7072 15.1442L70.7502 17.0817C70.9767 17.2262 71.1369 17.4567 71.1994 17.7184C71.2541 17.9801 71.2072 18.2575 71.0627 18.4879L67.7618 23.6949L63.0431 20.6324L64.3868 18.5504L66.3009 15.4567Z" fill="black"/>
+</svg></div><div class="margin-top margin-medium"><h3>Application Guidence</h3></div></a><a id="w-node-daf00917-770e-8250-c13e-7b943d1ac110-03faf5b9" href="/user-account" class="dashboard-tile w-inline-block"><div class="icon-1x1-large w-embed"><svg width="100%" height="100%" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M35 0C15.699 0 0 15.699 0 35C0 54.301 15.699 70 35 70C54.301 70 70 54.301 70 35C70 15.699 54.301 0 35 0ZM50.398 63.199V50.199C50.398 45.699 46.6988 41.9998 42.0972 41.9998H27.8002C23.1986 41.9998 19.4994 45.699 19.4994 50.199V63.097C9.4994 57.597 2.8004 47.097 2.8004 34.898C2.8004 17.199 17.1984 2.796 34.9024 2.796C52.6014 2.79991 67.1014 17.3 67.1014 34.999C67.1014 47.101 60.3983 57.698 50.3984 63.198L50.398 63.199Z" fill="black"/>
+<path d="M35 21.3008C29.8984 21.3008 25.6992 25.5 25.6992 30.6016C25.6992 35.7032 29.8984 39.9024 35 39.9024C40.1016 39.9024 44.3008 35.7032 44.3008 30.6016C44.3008 25.5 40.1016 21.3008 35 21.3008Z" fill="black"/>
+</svg></div><div class="margin-top margin-medium"><h3>Account</h3></div></a></div></div></div></div></div></main></div><div id="accessrequired" class="div-block-4"><div class="div-block-3"><div class="course-needed-wrapper"><h2>You need a subscription</h2><div class="spacer-small"></div><div>To continue and unlock the content, you’ll need to purchase the course. <a href="/log-in" class="link">Log in</a> or use the link below to get started and gain full access.</div><div class="spacer-small"></div><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div><form data-node-type="commerce-add-to-cart-form" data-commerce-sku-id="65da43cf96580c8ccd257ace" data-commerce-product-id="65da43cf4ef1f3719442eceb" class="w-commerce-commerceaddtocartform default-state"><div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_sku_values_3dr%22%2C%22to%22%3A%22optionValues%22%7D%5D" data-commerce-product-sku-values="%7B%7D" data-node-type="commerce-add-to-cart-option-list" data-commerce-product-id="65da43cf4ef1f3719442eceb" data-preselect-default-variant="false" role="group"></div><label for="quantity-5d6f5adf292b0a82341148c4735bcda-2" class="w-condition-invisible">Quantity</label><input type="submit" data-node-type="commerce-add-to-cart-button" data-loading-text="Adding to cart..." aria-busy="false" aria-haspopup="dialog" style="display:none" class="w-commerce-commerceaddtocartbutton" value="Add to Cart"/><a data-node-type="commerce-buy-now-button" aria-busy="false" aria-haspopup="false" data-default-text="Purchase Course
+" data-subscription-text="Subscribe now" class="w-commerce-commercebuynowbutton button" href="/checkout">Purchase Course
+</a></form><div style="display:none" class="w-commerce-commerceaddtocartoutofstock" tabindex="0"><div>This product is out of stock.</div></div><div aria-live="assertive" data-node-type="commerce-add-to-cart-error" style="display:none" class="w-commerce-commerceaddtocarterror"><div data-node-type="commerce-add-to-cart-error" data-w-add-to-cart-quantity-error="Product is not available in this quantity." data-w-add-to-cart-general-error="Something went wrong when adding this item to the cart." data-w-add-to-cart-mixed-cart-error="You can’t purchase another product with a subscription." data-w-add-to-cart-buy-now-error="Something went wrong when trying to purchase this item." data-w-add-to-cart-checkout-disabled-error="Checkout is disabled on this site." data-w-add-to-cart-select-all-options-error="Please select an option in each set.">Product is not available in this quantity.</div></div></div></div></div></div></div></div></div></div></main></div><script src="/assets/webflow/cfdcace069faf1f4dc2416d4.js" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="/assets/webflow/91a15c20fda4ed4c3fc1a7f6.js" type="text/javascript" integrity="sha384-mrMrjvWESRMz5EMKmQtl33WjblWkmU9zG0G5Nqtg7dtM6bFC2Ob3guPlhlUwXB4K" crossorigin="anonymous"></script><script src="/assets/webflow/89c5e111103f3141b9079f36.js" type="text/javascript" integrity="sha384-jTVgH7gnEtjtvY2Ya300jwceUA4Ehr90iQofSpJZ3NE/yDGEk+GrHLmPEy9QJxXc" crossorigin="anonymous"></script><script src="/assets/webflow/6ddae521a7a715d6eb9c8f4b.js" type="text/javascript" integrity="sha384-ZdBmBQWCF4nOCIoPklWMaxKs/IsQHcCcOrT5M2C/IawkktibqY6zl2TGNgarCT1r" crossorigin="anonymous"></script><script>
+
+// Allow Zooming for Accessibility per https://timothyricks.notion.site/Wizardry-Allow-Zooming-for-Accessibility-04e95fcf25d048c08ef6a45d7c148c71
+let zoomLevel = Math.round((window.devicePixelRatio * 100) / 2);
+function checkZoomLevel() {
+  if (zoomLevel > 100) {
+    $("body").addClass("user-font-size");
+  } else {
+    $("body").removeClass("user-font-size");
+  }
+}
+checkZoomLevel();
+$(window).resize(function () {
+  zoomLevel = Math.round((window.devicePixelRatio * 100) / 2);
+  checkZoomLevel();
+});
+
+</script></body></html>

@@ -3,11 +3,24 @@
 
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+import json
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1] / "dist"
+REDIRECTS = json.loads((ROOT.parent / "vercel.json").read_text()).get("redirects", [])
 
 
 class Handler(SimpleHTTPRequestHandler):
+    def do_GET(self):
+        route = urlsplit(self.path).path
+        for rule in REDIRECTS:
+            if rule["source"] == route:
+                self.send_response(307)
+                self.send_header("Location", rule["destination"])
+                self.end_headers()
+                return
+        super().do_GET()
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 

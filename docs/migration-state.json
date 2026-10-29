@@ -1,0 +1,77 @@
+{
+  "source": "https://the-contractors-course.design.webflow.com/",
+  "inspectedOn": "2026-10-28",
+  "github": "https://github.com/christopherapeterson/the-contractors-course",
+  "repositoryVisibility": "public",
+  "courseContentVisibility": "public",
+  "activeCustomersToMigrate": false,
+  "vercel": {
+    "teamId": "team_xCuRD8kE0WgzrkJg4M2OmMFf",
+    "teamSlug": "chris-projects-f7cef533",
+    "projectId": "prj_M7daKHHcCagAXT8gv9GlxpVECM11",
+    "projectName": "the-contractors-course",
+    "gitConnectionVerified": true,
+    "deployed": false
+  },
+  "recovered": {
+    "lawAndBusinessItems": 8,
+    "generalBItems": 6,
+    "flashcards": 81,
+    "products": 1,
+    "courseLinkedMediaFiles": 87
+  },
+  "designExport": {
+    "status": "waiting-for-workspace-code-export",
+    "selectedApproach": "official-webflow-code-export",
+    "sourceStagingDomain": "the-contractors-course.webflow.io",
+    "sourcePublishStatusObserved": "Not published",
+    "workspacePlanUrl": "https://webflow.com/dashboard/workspace/christophers-workspace-6560b9/plans?ref=exportmodal"
+  },
+  "pagesObservedInDesigner": [
+    "Home",
+    "California contractor licence requirements",
+    "General-B course",
+    "Practice Tests",
+    "Application guidance",
+    "Dashboard",
+    "Flash Cards",
+    "[Draft] Cheat Sheets",
+    "[Draft] Style Guide",
+    "[Draft] Courses (main dashboard)",
+    "[Draft] Relume saves",
+    "Contractor License Requirements",
+    "Contact us",
+    "sa5-ag (folder, one page)",
+    "signup",
+    "Law & businesses Template",
+    "General-Bs Template",
+    "Flash Cards Template",
+    "Products Template",
+    "Categories Template",
+    "Checkout",
+    "Checkout (PayPal)",
+    "Order Confirmation",
+    "Log In",
+    "Sign Up",
+    "Reset Password",
+    "Update Password",
+    "Access Denied",
+    "User Account"
+  ],
+  "remainingWork": [
+    "Download the official design ZIP after Workspace code export is unlocked",
+    "Inventory and preserve marketing assets, custom code, interactions, forms, and draft pages from the design export",
+    "Rebuild CMS collection pages using the recovered JSON and local media manifest",
+    "Decide the new product offer, including the source design's conflicting yearly price text",
+    "Configure Clerk, Stripe Checkout, and durable enrollment/progress storage if the proposed stack is accepted",
+    "Verify sign-in, payment, enrollment, desktop/mobile layout, flashcards, and external quiz links",
+    "Deploy a Vercel preview and configure the production domain when ready"
+  ],
+  "limitations": [
+    "No complete design export has been downloaded yet",
+    "The 87 recovered files are media linked from course HTML, not a full export of the Webflow Assets panel",
+    "External FlexiQuiz question banks are not included",
+    "Historical order/customer records have not been exported",
+    "Auth/payment recommendations are not implemented or provisioned"
+  ]
+}

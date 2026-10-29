@@ -38,7 +38,7 @@ Next steps:
 3. Replace Webflow login and checkout, and connect this repository to Vercel.
 4. Verify desktop and mobile layouts, every course page, flashcards, quiz links, contact forms, sign-in, and test checkout before launch.
 
-The application, authentication, and payment flows are not deployed yet. No customer records or payment credentials are included.
+The public [GitHub repository](https://github.com/christopherapeterson/the-contractors-course) is connected to my [Vercel project](https://vercel.com/chris-projects-f7cef533/the-contractors-course). The application, authentication, and payment flows are not deployed yet. No customer records or payment credentials are included. FlexiQuiz tests are preserved as external links; their underlying question banks have not been exported.
 
 ## Auth and payments
 

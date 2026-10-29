@@ -11,8 +11,11 @@
     "projectId": "prj_M7daKHHcCagAXT8gv9GlxpVECM11",
     "projectName": "thecontractorscourse",
     "gitConnectionVerified": true,
-    "deployed": false,
-    "productionUrl": "https://thecontractorscourse.vercel.app"
+    "deployed": true,
+    "productionUrl": "https://thecontractorscourse.vercel.app",
+    "deploymentId": "dpl_5BP2HoL1nJyzz9V5bWhTLdL75kkj",
+    "applicationCommit": "a92d64a52d9705f80a4be013e9daf5ee4432e041",
+    "verifiedOn": "2026-10-29"
   },
   "recovered": {
     "lawAndBusinessItems": 8,
@@ -60,7 +63,6 @@
     "User Account"
   ],
   "remainingWork": [
-    "Deploy and verify the public static course site",
     "Optional: configure account-based progress and paid enrollment if requested",
     "Optional: incorporate the original Webflow design export"
   ],
@@ -70,5 +72,15 @@
     "Progress is saved in the visitor browser and does not sync across devices",
     "Auth and payment integrations are not enabled",
     "Original study material has not received a factual or legal review"
-  ]
+  ],
+  "verification": {
+    "pagesAndRoutes": 19,
+    "chapters": 12,
+    "flashcards": 81,
+    "localMediaFiles": 87,
+    "desktopAndMobile": true,
+    "savedProgress": true,
+    "publicAccess": true,
+    "browserErrorsObserved": 0
+  }
 }

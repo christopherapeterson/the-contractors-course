@@ -1,0 +1,33 @@
+{
+  "source": "Webflow official CSV exports",
+  "collections": [
+    {
+      "name": "law-and-business",
+      "count": 8,
+      "sourceFile": "content/source/law-and-business.csv",
+      "sourceSha256": "8c80a0ca2f28d0fa56217ed18a57e9af71f5a8bb6c893b6ccf4583e030433a5c",
+      "jsonFile": "content/law-and-business.json"
+    },
+    {
+      "name": "general-b",
+      "count": 6,
+      "sourceFile": "content/source/general-b.csv",
+      "sourceSha256": "cbb10c25da079f234e712c56bf17407ff9c648b5da48b6804019117c3e4d67be",
+      "jsonFile": "content/general-b.json"
+    },
+    {
+      "name": "flash-cards",
+      "count": 81,
+      "sourceFile": "content/source/flash-cards.csv",
+      "sourceSha256": "b4270a0f7ac56f08d65d8fc3f0be6ba0b27d2ea6b94d35b8f240233e48472076",
+      "jsonFile": "content/flash-cards.json"
+    },
+    {
+      "name": "products",
+      "count": 1,
+      "sourceFile": "content/source/products.csv",
+      "sourceSha256": "04058832a951230e4e8350d92fe20f0d65fdcdb421262209635090ae8db39791",
+      "jsonFile": "content/products.json"
+    }
+  ]
+}

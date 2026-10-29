@@ -1,0 +1,48 @@
+{
+  "collection": "products",
+  "items": [
+    {
+      "id": "65da43cf4ef1f3719442eceb",
+      "slug": "general-b-contractors-course",
+      "name": "General-B Contractor's Course",
+      "type": "Membership",
+      "price": "$299.00",
+      "compareAtPrice": "$550.00",
+      "descriptionHtml": "",
+      "source": {
+        "Products Collection ID": "652892bacabc4a6c0712d90c",
+        "Product ID": "65da43cf4ef1f3719442eceb",
+        "Variants Collection ID": "652892bacabc4a6c0712d90f",
+        "Variant ID": "65da43cf96580c8ccd257ace",
+        "Product Handle": "general-b-contractors-course",
+        "Product Name": "General-B Contractor's Course",
+        "Product Type": "Membership",
+        "Product Description": "",
+        "Product Categories": "",
+        "Main Variant Image": "",
+        "More Variant Images": "",
+        "Variant Price": "$299.00",
+        "Variant Compare-at Price": "$550.00",
+        "Product Tax Class": "standard-taxable",
+        "Variant Sku": "",
+        "Variant Inventory": "",
+        "Requires Shipping": "false",
+        "Variant Weight": "",
+        "Variant Width": "",
+        "Variant Height": "",
+        "Variant Length": "",
+        "Variant Download Name": "",
+        "Variant Download URL": "",
+        "Option1 Name": "",
+        "Option1 Value": "",
+        "Option2 Name": "",
+        "Option2 Value": "",
+        "Option3 Name": "",
+        "Option3 Value": "",
+        "Created On": "Sat Feb 24 2024 19:30:23 GMT+0000 (Coordinated Universal Time)",
+        "Updated On": "Fri Sep 13 2024 05:42:18 GMT+0000 (Coordinated Universal Time)",
+        "Published On": "Fri Sep 13 2024 05:42:54 GMT+0000 (Coordinated Universal Time)"
+      }
+    }
+  ]
+}
